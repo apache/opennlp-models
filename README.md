@@ -72,6 +72,9 @@ compile group: "org.apache.opennlp", name: "opennlp-models-langdetect", version:
 
 For more details please check our [documentation](http://opennlp.apache.org/docs/)
 
+## Adding a new Model
+
+Ensure to add a new model to the `expected-models.txt` file located in `opennlp-models-test`.
 
 ## Contributing
 

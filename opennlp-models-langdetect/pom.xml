@@ -30,8 +30,45 @@
   </parent>
 
   <artifactId>opennlp-models-langdetect</artifactId>
-  <version>0.1-SNAPSHOT</version>
 
-  <name>Apache OpenNLP Models Lang-Detect</name>
+  <name>Apache OpenNLP Models :: Lang-Detect</name>
 
+  <properties>
+    <dist.base>${asf.dist.base}</dist.base>
+    <model.family>langdetect</model.family>
+    <model.name>langdetect-183.bin</model.name>
+    <model.version>1.8.3</model.version>
+    <model.md5>87be0a1cf60e5d8998e521401a87ca97</model.md5>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+        <includes>
+          <include>**/model.properties</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*.bin</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>com.googlecode.maven-download-plugin</groupId>
+        <artifactId>download-maven-plugin</artifactId>
+        <configuration>
+          <url>${dist.base}/${model.family}/${model.version}/${model.name}</url>
+          </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 </project>
