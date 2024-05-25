@@ -38,7 +38,7 @@ under the License.
         <model.family>ud-models-1.0</model.family>
         <model.name>opennlp-en-ud-ewt-sentence-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
-        <model.md5>5965ada99a2ca77beb8632bb47741b7a</model.md5>
+        <model.sha256>8dddd7e582cedef4a79a83fd340cefcdafe58419bd20520fec90492ea4bffd11</model.sha256>
     </properties>
 
     <build>

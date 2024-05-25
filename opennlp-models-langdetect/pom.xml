@@ -38,7 +38,7 @@
     <model.family>langdetect</model.family>
     <model.name>langdetect-183.bin</model.name>
     <model.version>1.8.3</model.version>
-    <model.md5>87be0a1cf60e5d8998e521401a87ca97</model.md5>
+    <model.sha256>2ddf585fac2e02a9dcfb9a4a9cc9417562eaac351be2efb506a2eaa87f19e9d4</model.sha256>
   </properties>
 
   <build>

@@ -158,7 +158,7 @@
 					</executions>
 					<configuration>
 						<outputDirectory>${project.build.directory}/models</outputDirectory>
-						<md5>${model.md5}</md5>
+						<sha256>${model.sha256}</sha256>
 					</configuration>
 				</plugin>
 			</plugins>

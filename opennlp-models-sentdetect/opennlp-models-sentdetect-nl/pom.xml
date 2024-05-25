@@ -38,7 +38,7 @@ under the License.
         <model.family>ud-models-1.0</model.family>
         <model.name>opennlp-nl-ud-alpino-sentence-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
-        <model.md5>ed160f2cf99b249017d7fc3d3ad8c6b7</model.md5>
+        <model.sha256>4e4d4ce182c0dc6f12f406077a967807828a523191fbb9199219e5d5969edfb7</model.sha256>
     </properties>
 
     <build>
