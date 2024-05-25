@@ -248,7 +248,7 @@
 
 	<modules>
 		<module>opennlp-models-langdetect</module>
-		<module>opennlp-models-sendetect</module>
+		<module>opennlp-models-sentdetect</module>
 		<module>opennlp-models-test</module>
 	</modules>
 

@@ -25,13 +25,13 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.apache.opennlp</groupId>
-        <artifactId>opennlp-models-sendetect</artifactId>
+        <artifactId>opennlp-models-sentdetect</artifactId>
         <version>0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>opennlp-models-sendetect-fr</artifactId>
+    <artifactId>opennlp-models-sentdetect-fr</artifactId>
 
-    <name>Apache OpenNLP Models :: Sen-Detect :: French</name>
+    <name>Apache OpenNLP Models :: Sent-Detect :: French</name>
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>

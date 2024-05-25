@@ -25,20 +25,20 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.apache.opennlp</groupId>
-        <artifactId>opennlp-models-sendetect</artifactId>
+        <artifactId>opennlp-models-sentdetect</artifactId>
         <version>0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>opennlp-models-sendetect-it</artifactId>
+    <artifactId>opennlp-models-sentdetect-en</artifactId>
 
-    <name>Apache OpenNLP Models :: Sen-Detect :: Italian</name>
+    <name>Apache OpenNLP Models :: Sent-Detect :: English</name>
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
         <model.family>ud-models-1.0</model.family>
-        <model.name>opennlp-it-ud-vit-sentence-1.0-1.9.3.bin</model.name>
+        <model.name>opennlp-en-ud-ewt-sentence-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
-        <model.md5>3083dc13ba071c5aca94f81eeed6c097</model.md5>
+        <model.md5>5965ada99a2ca77beb8632bb47741b7a</model.md5>
     </properties>
 
     <build>

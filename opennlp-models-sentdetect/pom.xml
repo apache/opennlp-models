@@ -29,18 +29,18 @@ under the License.
         <version>0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>opennlp-models-sendetect</artifactId>
+    <artifactId>opennlp-models-sentdetect</artifactId>
 
-    <name>Apache OpenNLP Models :: Sen-Detect</name>
+    <name>Apache OpenNLP Models :: Sent-Detect</name>
 
     <packaging>pom</packaging>
 
     <modules>
-        <module>opennlp-models-sendetect-de</module>
-        <module>opennlp-models-sendetect-it</module>
-        <module>opennlp-models-sendetect-en</module>
-        <module>opennlp-models-sendetect-fr</module>
-        <module>opennlp-models-sendetect-nl</module>
+        <module>opennlp-models-sentdetect-de</module>
+        <module>opennlp-models-sentdetect-it</module>
+        <module>opennlp-models-sentdetect-en</module>
+        <module>opennlp-models-sentdetect-fr</module>
+        <module>opennlp-models-sentdetect-nl</module>
     </modules>
 
 </project>
