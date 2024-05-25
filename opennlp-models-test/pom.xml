@@ -47,7 +47,7 @@ under the License.
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>org.apache.opennlp.Main</mainClass>
+                    <mainClass>org.apache.opennlp.ModelValidator</mainClass>
                     <arguments>
                         <argument>${project.basedir}</argument>
                     </arguments>

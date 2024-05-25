@@ -28,7 +28,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 
-public class Main {
+public class ModelValidator {
 
   public static void main(String[] args) {
     if (args.length != 1) {
