@@ -94,16 +94,19 @@
 	<properties>
 		<!-- Build Properties -->
 		<java.version>17</java.version>
-		<maven.version>3.3.9</maven.version>
-		<enforcer.plugin.version>3.3.0</enforcer.plugin.version>
-
-		<junit.version>5.10.1</junit.version>
+		<maven.version>3.6.3</maven.version>
 
 		<asf.dist.base>https://dist.apache.org/repos/dist/release/opennlp/models/</asf.dist.base>
 		<sf.dist.base>https://opennlp.sourceforge.net/models-1.5/</sf.dist.base>
 
 		<!-- set a fixed value here to enable reproducable builds -->
 		<project.build.outputTimestamp>2024-01-01T00:00:00Z</project.build.outputTimestamp>
+
+		<!-- maven plugin versions -->
+		<enforcer.plugin.version>3.3.0</enforcer.plugin.version>
+		<download.plugin.version>1.9.0</download.plugin.version>
+		<compiler.plugin.version>3.10.1</compiler.plugin.version>
+		<build-helper.plugin.version>3.6.0</build-helper.plugin.version>
 	</properties>
 
 	<build>
@@ -122,7 +125,7 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>build-helper-maven-plugin</artifactId>
-					<version>3.6.0</version>
+					<version>${build-helper.plugin.version}</version>
 					<executions>
 						<execution>
 							<id>add-resource</id>
@@ -143,7 +146,7 @@
 				<plugin>
 					<groupId>com.googlecode.maven-download-plugin</groupId>
 					<artifactId>download-maven-plugin</artifactId>
-					<version>1.9.0</version>
+					<version>${download.plugin.version}</version>
 					<executions>
 						<execution>
 							<id>download-model</id>
@@ -165,7 +168,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.10.1</version>
+				<version>${compiler.plugin.version}</version>
 				<configuration>
 					<release>${java.version}</release>
 					<compilerArgument>-Xlint</compilerArgument>
