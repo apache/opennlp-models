@@ -254,6 +254,7 @@
 		<module>opennlp-models-langdetect</module>
 		<module>opennlp-models-sentdetect</module>
 		<module>opennlp-models-test</module>
+		<module>opennlp-models-tokenizer</module>
 	</modules>
 
 </project>
