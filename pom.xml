@@ -94,8 +94,20 @@
 	<properties>
 		<!-- Build Properties -->
 		<java.version>17</java.version>
-		<maven.version>3.3.9</maven.version>
+		<maven.version>3.6.3</maven.version>
+
+		<asf.dist.base>https://dist.apache.org/repos/dist/release/opennlp/models/</asf.dist.base>
+		<sf.dist.base>https://opennlp.sourceforge.net/models-1.5/</sf.dist.base>
+
+		<!-- set a fixed value here to enable reproducable builds -->
+		<project.build.outputTimestamp>2024-01-01T00:00:00Z</project.build.outputTimestamp>
+
+		<!-- maven plugin versions -->
 		<enforcer.plugin.version>3.3.0</enforcer.plugin.version>
+		<download.plugin.version>1.9.0</download.plugin.version>
+		<compiler.plugin.version>3.10.1</compiler.plugin.version>
+		<build-helper.plugin.version>3.6.0</build-helper.plugin.version>
+		<exec.plugin.version>3.3.0</exec.plugin.version>
 	</properties>
 
 	<build>
@@ -111,6 +123,45 @@
 						<mavenExecutorId>forked-path</mavenExecutorId>
 					</configuration>
 				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>build-helper-maven-plugin</artifactId>
+					<version>${build-helper.plugin.version}</version>
+					<executions>
+						<execution>
+							<id>add-resource</id>
+							<phase>generate-resources</phase>
+							<goals>
+								<goal>add-resource</goal>
+							</goals>
+							<configuration>
+								<resources>
+									<resource>
+										<directory>${project.build.directory}/models/</directory>
+									</resource>
+								</resources>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>com.googlecode.maven-download-plugin</groupId>
+					<artifactId>download-maven-plugin</artifactId>
+					<version>${download.plugin.version}</version>
+					<executions>
+						<execution>
+							<id>download-model</id>
+							<phase>generate-resources</phase>
+							<goals>
+								<goal>wget</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<outputDirectory>${project.build.directory}/models</outputDirectory>
+						<sha256>${model.sha256}</sha256>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 
@@ -118,7 +169,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.10.1</version>
+				<version>${compiler.plugin.version}</version>
 				<configuration>
 					<release>${java.version}</release>
 					<compilerArgument>-Xlint</compilerArgument>
@@ -201,6 +252,8 @@
 
 	<modules>
 		<module>opennlp-models-langdetect</module>
+		<module>opennlp-models-sentdetect</module>
+		<module>opennlp-models-test</module>
 	</modules>
 
 </project>
