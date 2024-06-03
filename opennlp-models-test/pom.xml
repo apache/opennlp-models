@@ -32,6 +32,90 @@ under the License.
     <artifactId>opennlp-models-test</artifactId>
     <name>Apache OpenNLP Models :: Tests</name>
 
+    <dependencies>
+        <!-- These dependencies are added here to influence Maven build order. Test module needs to build last! -->
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-sentdetect-de</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-sentdetect-en</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-sentdetect-it</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-sentdetect-nl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-sentdetect-fr</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-tokenizer-de</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-tokenizer-en</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-tokenizer-it</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-tokenizer-nl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-tokenizer-fr</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.opennlp</groupId>-->
+<!--            <artifactId>opennlp-models-pos-de</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.opennlp</groupId>-->
+<!--            <artifactId>opennlp-models-pos-en</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.opennlp</groupId>-->
+<!--            <artifactId>opennlp-models-pos-it</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.opennlp</groupId>-->
+<!--            <artifactId>opennlp-models-pos-nl</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.opennlp</groupId>-->
+<!--            <artifactId>opennlp-models-pos-fr</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-langdetect</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
