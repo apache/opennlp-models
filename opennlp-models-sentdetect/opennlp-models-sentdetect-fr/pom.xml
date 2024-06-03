@@ -26,7 +26,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models-sentdetect</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>opennlp-models-sentdetect-fr</artifactId>
