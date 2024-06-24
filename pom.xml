@@ -31,7 +31,7 @@
 
 	<groupId>org.apache.opennlp</groupId>
 	<artifactId>opennlp-models</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Apache OpenNLP Models</name>
@@ -100,7 +100,7 @@
 		<sf.dist.base>https://opennlp.sourceforge.net/models-1.5/</sf.dist.base>
 
 		<!-- set a fixed value here to enable reproducable builds -->
-		<project.build.outputTimestamp>2024-06-24T06:17:34Z</project.build.outputTimestamp>
+		<project.build.outputTimestamp>2024-06-24T06:21:45Z</project.build.outputTimestamp>
 
 		<!-- maven plugin versions -->
 		<enforcer.plugin.version>3.3.0</enforcer.plugin.version>
