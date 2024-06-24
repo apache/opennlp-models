@@ -27,7 +27,9 @@ import java.util.jar.JarFile;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-
+/**
+ * Simple validator run via Maven to check the produced JAR files for validity.
+ */
 public class ModelValidator {
 
   public static void main(String[] args) {
