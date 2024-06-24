@@ -81,10 +81,12 @@ public class ModelValidator {
     final Pattern regexPattern = Pattern.compile(pattern);
     try (Stream<Path> stream = Files.walk(projectDir)) {
       return stream
-          .filter(Files::isRegularFile)
-          .filter(path -> !path.startsWith(testDir))
-          .filter(path -> regexPattern.matcher(path.getFileName().toString()).matches())
-          .toList();
+              .filter(Files::isRegularFile)
+              .filter(path -> !path.startsWith(testDir))
+              .filter(path -> regexPattern.matcher(path.getFileName().toString()).matches())
+              .filter(path -> !path.getFileName().toString().contains("javadoc"))  // Exclude files containing "javadoc"
+              .filter(path -> !path.getFileName().toString().contains("source"))  // Exclude files containing "source"
+              .toList();
     } catch (IOException e) {
       throw new RuntimeException(e);
     }
