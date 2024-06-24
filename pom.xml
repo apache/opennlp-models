@@ -108,6 +108,7 @@
 		<compiler.plugin.version>3.10.1</compiler.plugin.version>
 		<build-helper.plugin.version>3.6.0</build-helper.plugin.version>
 		<exec.plugin.version>3.3.0</exec.plugin.version>
+		<javadoc.plugin.version>3.5.0</javadoc.plugin.version>
 	</properties>
 
 	<build>
@@ -219,6 +220,29 @@
 								<version>[${maven.version},)</version>
 							</requireMavenVersion>
 						</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${javadoc.plugin.version}</version>
+				<configuration>
+					<doclint>none</doclint>
+					<source>${java.version}</source>
+					<sourcepath>src/main/java</sourcepath>
+				</configuration>
+				<executions>
+					<execution>
+						<id>create-javadoc-jar</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<show>public</show>
+							<quiet>false</quiet>
+							<use>false</use> <!-- Speeds up the build of the javadocs -->
 						</configuration>
 					</execution>
 				</executions>
