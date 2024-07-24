@@ -36,6 +36,7 @@ under the License.
         <model.name>opennlp-en-ud-ewt-pos-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>9bf8a5f634a18c5a34f4cce0b256a070b472521e4e916f019a9433921a3bc5a8</model.sha256>
+        <model.language>en</model.language>
     </properties>
 
     <build>

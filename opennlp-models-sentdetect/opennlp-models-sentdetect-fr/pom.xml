@@ -37,6 +37,7 @@ under the License.
         <model.name>opennlp-1.0-1.9.3fr-ud-ftb-sentence-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>94e57992d4b671909ccb3c5d8e6cb81c84ac96c1c6a19b8b4e7b0197a41cc870</model.sha256>
+        <model.language>fr</model.language>
     </properties>
 
     <build>

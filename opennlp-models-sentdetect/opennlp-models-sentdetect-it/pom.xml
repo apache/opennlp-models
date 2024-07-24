@@ -37,6 +37,7 @@ under the License.
         <model.name>opennlp-it-ud-vit-sentence-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>1f9c15b5bb6be611ba2cc7e0c50edce56416977ad8c0c4e53379a0c80606d3ad</model.sha256>
+        <model.language>it</model.language>
     </properties>
 
     <build>

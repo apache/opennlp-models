@@ -36,6 +36,7 @@ under the License.
         <model.name>opennlp-it-ud-vit-pos-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>babf98f2b11666e4efbca641b47385a2458cbb835d7ca07af599f82bb9db5997</model.sha256>
+        <model.language>it</model.language>
     </properties>
 
     <build>

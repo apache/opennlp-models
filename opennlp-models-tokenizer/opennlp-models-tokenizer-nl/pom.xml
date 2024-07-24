@@ -37,6 +37,7 @@ under the License.
         <model.name>opennlp-nl-ud-alpino-tokens-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>5b2d215c73a9bd2939e988ffea34a2c2cd212931a074187916530f59d6f19caf</model.sha256>
+        <model.language>nl</model.language>
     </properties>
 
     <build>

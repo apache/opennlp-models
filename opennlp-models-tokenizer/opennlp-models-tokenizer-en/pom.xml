@@ -37,6 +37,7 @@ under the License.
         <model.name>opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>9df0730d5e54ec6673d46b565a623ea56c2d7caa8aa153eb72b59b1a53de8488</model.sha256>
+        <model.language>en</model.language>
     </properties>
 
     <build>

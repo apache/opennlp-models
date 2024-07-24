@@ -37,6 +37,7 @@ under the License.
         <model.name>opennlp-de-ud-gsd-tokens-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>26ad9f6ed7ee9485b99e0d9785301c8cefe223870dadb5dacb47b07becf28640</model.sha256>
+        <model.language>de</model.language>
     </properties>
 
     <build>

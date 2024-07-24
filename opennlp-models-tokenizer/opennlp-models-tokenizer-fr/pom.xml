@@ -37,6 +37,7 @@ under the License.
         <model.name>opennlp-fr-ud-ftb-tokens-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>a7be8bf3705b25bb473fbb2db4f07588ab1d8869554f772617800e5e3e829e63</model.sha256>
+        <model.language>fr</model.language>
     </properties>
 
     <build>

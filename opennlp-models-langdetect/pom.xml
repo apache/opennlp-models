@@ -38,6 +38,7 @@
     <model.name>langdetect-183.bin</model.name>
     <model.version>1.8.3</model.version>
     <model.sha256>2ddf585fac2e02a9dcfb9a4a9cc9417562eaac351be2efb506a2eaa87f19e9d4</model.sha256>
+    <model.language>root</model.language>
   </properties>
 
   <build>
