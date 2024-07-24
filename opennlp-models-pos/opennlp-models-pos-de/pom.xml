@@ -36,6 +36,7 @@ under the License.
         <model.name>opennlp-de-ud-gsd-pos-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>1436a6f77d25e943963002945c896d332296e2018f3e9de91013ea8cf4a897e8</model.sha256>
+        <model.language>de</model.language>
     </properties>
 
     <build>

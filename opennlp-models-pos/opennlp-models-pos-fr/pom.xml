@@ -36,6 +36,7 @@ under the License.
         <model.name>opennlp-fr-ud-ftb-pos-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>d572cb0d7df5f5ca968d97fbb46429605ce8491bca4ad6844bf2827af5e0f3eb</model.sha256>
+        <model.language>fr</model.language>
     </properties>
 
     <build>

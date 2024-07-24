@@ -36,6 +36,7 @@ under the License.
         <model.name>opennlp-nl-ud-alpino-pos-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>8c99733fcba8330921f19d0389dc8e820d64b19b15c74a8958f012ab82133b6e</model.sha256>
+        <model.language>nl</model.language>
     </properties>
 
     <build>

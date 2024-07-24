@@ -37,6 +37,7 @@ under the License.
         <model.name>opennlp-de-ud-gsd-sentence-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>2d4da68109269aab96d128004fe0b88c8a0d226c0ead2b40afc0d10c6d5dc182</model.sha256>
+        <model.language>de</model.language>
     </properties>
 
     <build>

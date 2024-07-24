@@ -37,6 +37,7 @@ under the License.
         <model.name>opennlp-it-ud-vit-tokens-1.0-1.9.3.bin</model.name>
         <model.version>1.9.3</model.version>
         <model.sha256>933cea412fe026e815d7a618d54c1431154731d2541e604c3a53c70c036a0102</model.sha256>
+        <model.language>it</model.language>
     </properties>
 
     <build>
