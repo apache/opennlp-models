@@ -104,7 +104,7 @@
 
 		<!-- maven plugin versions -->
 		<enforcer.plugin.version>3.3.0</enforcer.plugin.version>
-		<download.plugin.version>1.9.0</download.plugin.version>
+		<download.plugin.version>1.10.0</download.plugin.version>
 		<compiler.plugin.version>3.10.1</compiler.plugin.version>
 		<build-helper.plugin.version>3.6.0</build-helper.plugin.version>
 		<exec.plugin.version>3.4.1</exec.plugin.version>
