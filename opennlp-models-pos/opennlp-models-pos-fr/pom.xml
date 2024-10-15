@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models-pos</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
     </parent>
 
     <name>Apache OpenNLP Models :: Part-Of-Speech :: French</name>
@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.0</model.family>
-        <model.name>opennlp-fr-ud-ftb-pos-1.0-1.9.3.bin</model.name>
-        <model.version>1.9.3</model.version>
-        <model.sha256>d572cb0d7df5f5ca968d97fbb46429605ce8491bca4ad6844bf2827af5e0f3eb</model.sha256>
+        <model.family>ud-models-1.1</model.family>
+        <model.name>opennlp-fr-ud-gsd-pos-1.1-2.4.0.bin</model.name>
+        <model.version>2.4.0</model.version>
+        <model.sha256>c713d2c99ae10cdda0b7d2be98533615283d62ff2d0f394f02eb126607b13a8d</model.sha256>
         <model.language>fr</model.language>
     </properties>
 

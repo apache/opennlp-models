@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>opennlp-models-sentdetect</artifactId>
@@ -34,11 +34,29 @@ under the License.
     <packaging>pom</packaging>
 
     <modules>
+        <module>opennlp-models-sentdetect-bg</module>
+        <module>opennlp-models-sentdetect-cs</module>
+        <module>opennlp-models-sentdetect-da</module>
         <module>opennlp-models-sentdetect-de</module>
-        <module>opennlp-models-sentdetect-it</module>
         <module>opennlp-models-sentdetect-en</module>
+        <module>opennlp-models-sentdetect-es</module>
+        <module>opennlp-models-sentdetect-et</module>
+        <module>opennlp-models-sentdetect-fi</module>
         <module>opennlp-models-sentdetect-fr</module>
+        <module>opennlp-models-sentdetect-hr</module>
+        <module>opennlp-models-sentdetect-it</module>
+        <module>opennlp-models-sentdetect-lv</module>
         <module>opennlp-models-sentdetect-nl</module>
+        <module>opennlp-models-sentdetect-no</module>
+        <module>opennlp-models-sentdetect-pl</module>
+        <module>opennlp-models-sentdetect-pt</module>
+        <module>opennlp-models-sentdetect-ro</module>
+        <module>opennlp-models-sentdetect-ru</module>
+        <module>opennlp-models-sentdetect-sk</module>
+        <module>opennlp-models-sentdetect-sl</module>
+        <module>opennlp-models-sentdetect-sr</module>
+        <module>opennlp-models-sentdetect-sv</module>
+        <module>opennlp-models-sentdetect-uk</module>
     </modules>
 
 </project>

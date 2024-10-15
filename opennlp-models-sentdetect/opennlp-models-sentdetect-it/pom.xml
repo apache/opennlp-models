@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models-sentdetect</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>opennlp-models-sentdetect-it</artifactId>
@@ -33,10 +33,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.0</model.family>
-        <model.name>opennlp-it-ud-vit-sentence-1.0-1.9.3.bin</model.name>
-        <model.version>1.9.3</model.version>
-        <model.sha256>1f9c15b5bb6be611ba2cc7e0c50edce56416977ad8c0c4e53379a0c80606d3ad</model.sha256>
+        <model.family>ud-models-1.1</model.family>
+        <model.name>opennlp-it-ud-vit-sentence-1.1-2.4.0.bin</model.name>
+        <model.version>2.4.0</model.version>
+        <model.sha256>b3459ff3adb63491c3fa9ec695fd997b3c745ad47744f0070cc5b9b31672c451</model.sha256>
         <model.language>it</model.language>
     </properties>
 

@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models-pos</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
     </parent>
 
     <name>Apache OpenNLP Models :: Part-Of-Speech :: Dutch</name>
@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.0</model.family>
-        <model.name>opennlp-nl-ud-alpino-pos-1.0-1.9.3.bin</model.name>
-        <model.version>1.9.3</model.version>
-        <model.sha256>8c99733fcba8330921f19d0389dc8e820d64b19b15c74a8958f012ab82133b6e</model.sha256>
+        <model.family>ud-models-1.1</model.family>
+        <model.name>opennlp-nl-ud-alpino-pos-1.1-2.4.0.bin</model.name>
+        <model.version>2.4.0</model.version>
+        <model.sha256>cc768650fd29f132e30fa04f7f0d4982d8b1e6827e8d7d388bfbdbd96c478484</model.sha256>
         <model.language>nl</model.language>
     </properties>
 
