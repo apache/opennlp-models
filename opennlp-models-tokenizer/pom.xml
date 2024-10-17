@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>opennlp-models-tokenizer</artifactId>
@@ -34,11 +34,29 @@ under the License.
     <packaging>pom</packaging>
 
     <modules>
+        <module>opennlp-models-tokenizer-bg</module>
+        <module>opennlp-models-tokenizer-cs</module>
+        <module>opennlp-models-tokenizer-da</module>
         <module>opennlp-models-tokenizer-de</module>
         <module>opennlp-models-tokenizer-en</module>
+        <module>opennlp-models-tokenizer-es</module>
+        <module>opennlp-models-tokenizer-et</module>
+        <module>opennlp-models-tokenizer-fi</module>
         <module>opennlp-models-tokenizer-fr</module>
+        <module>opennlp-models-tokenizer-hr</module>
         <module>opennlp-models-tokenizer-it</module>
+        <module>opennlp-models-tokenizer-lv</module>
         <module>opennlp-models-tokenizer-nl</module>
+        <module>opennlp-models-tokenizer-no</module>
+        <module>opennlp-models-tokenizer-pl</module>
+        <module>opennlp-models-tokenizer-pt</module>
+        <module>opennlp-models-tokenizer-ro</module>
+        <module>opennlp-models-tokenizer-ru</module>
+        <module>opennlp-models-tokenizer-sk</module>
+        <module>opennlp-models-tokenizer-sl</module>
+        <module>opennlp-models-tokenizer-sr</module>
+        <module>opennlp-models-tokenizer-sv</module>
+        <module>opennlp-models-tokenizer-uk</module>
     </modules>
 
 

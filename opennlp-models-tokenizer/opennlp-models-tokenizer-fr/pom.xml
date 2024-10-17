@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models-tokenizer</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>opennlp-models-tokenizer-fr</artifactId>
@@ -33,10 +33,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.0</model.family>
-        <model.name>opennlp-fr-ud-ftb-tokens-1.0-1.9.3.bin</model.name>
-        <model.version>1.9.3</model.version>
-        <model.sha256>a7be8bf3705b25bb473fbb2db4f07588ab1d8869554f772617800e5e3e829e63</model.sha256>
+        <model.family>ud-models-1.1</model.family>
+        <model.name>opennlp-fr-ud-gsd-tokens-1.1-2.4.0.bin</model.name>
+        <model.version>2.4.0</model.version>
+        <model.sha256>11db3a4af19f468f5e014ff6a0146e494f4aa2b0436113e04a5a5821f1708f3b</model.sha256>
         <model.language>fr</model.language>
     </properties>
 

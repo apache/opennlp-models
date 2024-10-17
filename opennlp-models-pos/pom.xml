@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>opennlp-models-pos</artifactId>
@@ -32,11 +32,29 @@ under the License.
     <packaging>pom</packaging>
 
     <modules>
+        <module>opennlp-models-pos-bg</module>
+        <module>opennlp-models-pos-cs</module>
+        <module>opennlp-models-pos-da</module>
         <module>opennlp-models-pos-de</module>
         <module>opennlp-models-pos-en</module>
+        <module>opennlp-models-pos-es</module>
+        <module>opennlp-models-pos-et</module>
+        <module>opennlp-models-pos-fi</module>
         <module>opennlp-models-pos-fr</module>
+        <module>opennlp-models-pos-hr</module>
         <module>opennlp-models-pos-it</module>
+        <module>opennlp-models-pos-lv</module>
         <module>opennlp-models-pos-nl</module>
+        <module>opennlp-models-pos-no</module>
+        <module>opennlp-models-pos-pl</module>
+        <module>opennlp-models-pos-pt</module>
+        <module>opennlp-models-pos-ro</module>
+        <module>opennlp-models-pos-ru</module>
+        <module>opennlp-models-pos-sk</module>
+        <module>opennlp-models-pos-sl</module>
+        <module>opennlp-models-pos-sr</module>
+        <module>opennlp-models-pos-sv</module>
+        <module>opennlp-models-pos-uk</module>
     </modules>
 
 </project>
