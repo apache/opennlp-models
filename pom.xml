@@ -103,7 +103,7 @@
 		<project.build.outputTimestamp>2024-07-25T07:22:47Z</project.build.outputTimestamp>
 
 		<!-- maven plugin versions -->
-		<enforcer.plugin.version>3.3.0</enforcer.plugin.version>
+		<enforcer.plugin.version>3.5.0</enforcer.plugin.version>
 		<download.plugin.version>1.11.0</download.plugin.version>
 		<compiler.plugin.version>3.10.1</compiler.plugin.version>
 		<build-helper.plugin.version>3.6.0</build-helper.plugin.version>
