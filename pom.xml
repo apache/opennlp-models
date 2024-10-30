@@ -94,18 +94,18 @@
 	<properties>
 		<!-- Build Properties -->
 		<java.version>17</java.version>
+		<maven.compiler.release>${java.version}</maven.compiler.release>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<maven.version>3.6.3</maven.version>
 
 		<asf.dist.base>https://dist.apache.org/repos/dist/release/opennlp/models/</asf.dist.base>
 		<sf.dist.base>https://opennlp.sourceforge.net/models-1.5/</sf.dist.base>
 
-		<!-- set a fixed value here to enable reproducable builds -->
+		<!-- set a fixed value here to enable reproducible builds -->
 		<project.build.outputTimestamp>2024-10-22T08:34:41Z</project.build.outputTimestamp>
 
 		<!-- maven plugin versions -->
-		<enforcer.plugin.version>3.5.0</enforcer.plugin.version>
 		<download.plugin.version>1.11.1</download.plugin.version>
-		<compiler.plugin.version>3.13.0</compiler.plugin.version>
 		<build-helper.plugin.version>3.6.0</build-helper.plugin.version>
 		<exec.plugin.version>3.5.0</exec.plugin.version>
 		<javadoc.plugin.version>3.10.1</javadoc.plugin.version>
@@ -170,7 +170,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${compiler.plugin.version}</version>
 				<configuration>
 					<release>${java.version}</release>
 					<compilerArgument>-Xlint</compilerArgument>
@@ -201,7 +200,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>${enforcer.plugin.version}</version>
 				<executions>
 					<execution>
 						<id>enforce-java</id>
