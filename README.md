@@ -18,29 +18,34 @@ limitations under the License.
 Welcome to Apache OpenNLP Models!
 ===========
 
-[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/apache/opennlp/main/LICENSE)
-[![Twitter Follow](https://img.shields.io/twitter/follow/ApacheOpennlp.svg?style=social)](https://twitter.com/ApacheOpenNLP)
+[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/apache/opennlp-models/main/LICENSE)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.opennlp/opennlp-models/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.opennlp/opennlp-models)
+[![Build Status](https://github.com/apache/opennlp-models/workflows/Java%20CI/badge.svg)](https://github.com/apache/opennlp-models/actions)
+[![Contributors](https://img.shields.io/github/contributors/apache/opennlp-models)](https://github.com/apache/opennlp-models/graphs/contributors)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/apache/opennlp-models.svg)](https://github.com/apache/opennlp-models/pulls)
+[![Stack Overflow](https://img.shields.io/badge/stack%20overflow-opennlp-f1eefe.svg)](https://stackoverflow.com/questions/tagged/opennlp)
 
 The Apache OpenNLP library provides binary models for processing of natural language text. 
 This repository is intended for the distribution of model files as a Maven artifacts.
 
 ## Useful Links
 
-For additional information, visit the [OpenNLP Home Page](http://opennlp.apache.org/)
+For additional information, visit the [OpenNLP Home Page](https://opennlp.apache.org/models.html).
 
-You can use OpenNLP with any language, further demo models are provided [here](http://opennlp.sourceforge.net/models-1.5/).
+You can use OpenNLP with many languages. Additional demo models are provided [here](https://opennlp.sourceforge.net/models-1.5/).
 
-The models are fully compatible with the latest release, they can be used for testing or getting started.
+The models are fully compatible with the latest [OpenNLP release](https://opennlp.apache.org/download.html). They can be used for testing or getting started.
 
-Please train your own models for all other use cases.
+> [!NOTE]  
+> Please train your own models for all other, specialized use cases.
 
-Documentation, including JavaDocs, code usage and command-line interface examples are available [here](http://opennlp.apache.org/docs/)
+Documentation, including JavaDocs, code usage and command-line interface examples are available [here](https://opennlp.apache.org/docs/)
 
-You can also follow our [mailing lists](http://opennlp.apache.org/mailing-lists.html) for news and updates.
+You can also follow our [mailing lists](https://opennlp.apache.org/mailing-lists.html) for news and updates.
 
 ## Overview
 
-We provide **Tokenizer**, **Sentence Detector** and **Part-of-Speech Tagger** models for the following languages:
+We provide **Tokenizer**, **Sentence Detector** and **Part-of-Speech Tagger** models for the following 23 languages:
 
    - Bulgarian
    - Croatian
@@ -66,8 +71,8 @@ We provide **Tokenizer**, **Sentence Detector** and **Part-of-Speech Tagger** mo
    - Swedish
    - Ukrainian
 
-These models are compatible with OpenNLP `>= 1.0.0`. Model details are available [here](https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.1/).
-
+These models are compatible with OpenNLP `>= 1.0.0`. Further details are available at the [OpenNLP Models](https://opennlp.apache.org/models.html) 
+page and in the [CHANGELOG](https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.1/CHANGES).
 
 In addition, we provide a **Language Detector**, which is able to detect 103 languages in ISO 693-3 standard. 
 Works well with longer texts that have at least 2 sentences or more from the same language. 
@@ -100,7 +105,7 @@ libraryDependencies += "org.apache.opennlp" % "opennlp-models-langdetect" % "${o
 compile group: "org.apache.opennlp", name: "opennlp-models-langdetect", version: "${opennlp.version}"
 ```
 
-For more details please check our [documentation](http://opennlp.apache.org/docs/)
+For more details please check our [documentation](https://opennlp.apache.org/docs/)
 
 ## Adding a new Model
 
