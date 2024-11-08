@@ -278,6 +278,7 @@
 		<module>opennlp-models-pos</module>
 		<module>opennlp-models-test</module>
 		<module>opennlp-models-tokenizer</module>
+		<module>opennlp-models-training</module>
 	</modules>
 
 </project>
