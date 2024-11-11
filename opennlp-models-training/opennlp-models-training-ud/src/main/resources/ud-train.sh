@@ -23,16 +23,16 @@ set -e
 
 # Script configuration
 UD_HOME="./"
-OPENNLP_VERSION="opennlp-2.4.0"
-OPENNLP_VERSION_NUMERIC="2.4.0"
+OPENNLP_VERSION="opennlp-2.5.0"
+OPENNLP_VERSION_NUMERIC="2.5.0"
 OPENNLP_MODEL_VERSION="1.1"
-OPENNLP_HOME="./apache-opennlp-2.4.0"
-OUTPUT_MODELS="./ud-models-2.4.0"
-GPG_PUBLIC_KEY="" # the public key from the OPENNLP KEYS file in short form.
+OPENNLP_HOME="./apache-opennlp-2.5.0"
+OPENNLP_CONFIG="ud-train.conf" # the file to configure the number of compute threads and training iterations
+OUTPUT_MODELS="./ud-models-2.5.0"
+GPG_PUBLIC_KEY="" # the public key from the OPENNLP KEYS file in short form
 EVAL_AFTER_TRAINING="true"
 CREATE_RELEASE="true"
 ENCODING="UTF-8"
-
 
 # Model(s) to train
 declare -a MODELS=("English|en|EWT" "Dutch|nl|Alpino" "French|fr|GSD" "German|de|GSD" "Italian|it|VIT" "Bulgarian|bg|BTB" "Czech|cs|PDT" "Croatian|hr|SET" "Danish|da|DDT" "Estonian|et|EDT" "Finnish|fi|TDT" "Latvian|lv|LVTB" "Norwegian|no|Bokmaal" "Polish|pl|PDB" "Portuguese|pt|GSD" "Romanian|ro|RRT" "Russian|ru|GSD" "Serbian|sr|SET" "Slovenian|sl|SSJ" "Spanish|es|GSD" "Slovak|sk|SNK" "Swedish|sv|Talbanken" "Ukrainian|uk|IU")
@@ -51,7 +51,7 @@ do
 
   # Tokenizer model
   echo -e "\nTraining tokenizer model ${SUBSET} ${LANG}..."
-  ${OPENNLP_HOME}/bin/opennlp TokenizerTrainer.conllu -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -lang ${LANGCODE} -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
+  ${OPENNLP_HOME}/bin/opennlp TokenizerTrainer.conllu -params ${UD_HOME}/${OPENNLP_CONFIG} -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -lang ${LANGCODE} -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
 
   if [ ${EVAL_AFTER_TRAINING} == "true" ]; then
     echo -e "\nEvaluating tokenizer model ${SUBSET} ${LANG}..."
@@ -67,10 +67,10 @@ do
   
   # Sentence model
   echo -e "\nTraining sentence model ${SUBSET} ${LANG}..."
-  ${OPENNLP_HOME}/bin/opennlp SentenceDetectorTrainer.conllu -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -lang ${LANGCODE} -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} -sentencesPerSample 10 > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
+  ${OPENNLP_HOME}/bin/opennlp SentenceDetectorTrainer.conllu -params ${UD_HOME}/${OPENNLP_CONFIG} -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -lang ${LANGCODE} -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} -sentencesPerSample 10 > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
 
   if [ ${EVAL_AFTER_TRAINING} == "true" ]; then
-    echo -e "Evaluating sentence model ${SUBSET} ${LANG}..."
+    echo -e "\nEvaluating sentence model ${SUBSET} ${LANG}..."
     ${OPENNLP_HOME}/bin/opennlp SentenceDetectorEvaluator.conllu -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-test.conllu -encoding ${ENCODING} -sentencesPerSample 10 > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.eval
   fi
 
@@ -83,7 +83,7 @@ do
 
   # POS model
   echo -e "\nTraining POS model ${SUBSET} ${LANG}..."
-  ${OPENNLP_HOME}/bin/opennlp POSTaggerTrainer.conllu -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} -lang ${LANGCODE} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.eval > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
+  ${OPENNLP_HOME}/bin/opennlp POSTaggerTrainer.conllu -params ${UD_HOME}/${OPENNLP_CONFIG} -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} -lang ${LANGCODE} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.eval > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
 
   if [ ${EVAL_AFTER_TRAINING} == "true" ]; then
     echo -e "\nEvaluating POS model ${SUBSET} ${LANG}..."
@@ -101,7 +101,7 @@ done
 
 if [ ${CREATE_RELEASE} == "true" ]; then
     cd ${OUTPUT_MODELS};
-    echo -e "\nCreate ZIP with eval and train logs."
+    echo -e "\nCreating ZIP with eval and training logs..."
     zip opennlp-training-eval-logs-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.zip *train *.eval
     sha512sum opennlp-training-eval-logs-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.zip > opennlp-training-eval-logs-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.zip.sha512
     sha256sum opennlp-training-eval-logs-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.zip > opennlp-training-eval-logs-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.zip.sha256
