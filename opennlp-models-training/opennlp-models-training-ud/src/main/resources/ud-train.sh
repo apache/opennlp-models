@@ -21,18 +21,41 @@ set -e
 
 # This script facilitates training OpenNLP models on Universal Dependencies (UD) data.
 
-# Script configuration
-UD_HOME="./"
-OPENNLP_VERSION="opennlp-2.5.0"
-OPENNLP_VERSION_NUMERIC="2.5.0"
-OPENNLP_MODEL_VERSION="1.1"
-OPENNLP_HOME="./apache-opennlp-2.5.0"
-OPENNLP_CONFIG="ud-train.conf" # the file to configure the number of compute threads and training iterations
-OUTPUT_MODELS="./ud-models-2.5.0"
-GPG_PUBLIC_KEY="" # the public key from the OPENNLP KEYS file in short form
-EVAL_AFTER_TRAINING="true"
-CREATE_RELEASE="true"
+#################################################
+# Essential ud-train script configuration       #
+# - directories and file locations              #
+# - versioning                                  #
+#################################################
+TRAIN_HOME="./"
 ENCODING="UTF-8"
+# The file to configure the number of compute threads and training iterations
+OPENNLP_CONFIG="ud-train.conf"
+# The directory a stable OpenNLP release is located in
+OPENNLP_HOME="./apache-opennlp-2.5.0"
+# The target version for training opennlp-models
+OPENNLP_MODEL_VERSION="1.1"
+# The version of OpenNLP tools to use for training
+OPENNLP_VERSION_NUMERIC="2.5.0"
+# The directory the resulting binary models are written to
+OUTPUT_MODELS="./ud-models-2.5.0"
+# The directory the ud treebanks are located in
+UD_HOME="./ud-treebanks-v2.14"
+
+#################################################
+# Parameters for training, evaluation & release #
+#################################################
+# Defines which models to train. If 'true', training of that model type is conducted
+TRAIN_TOKENIZER="true"
+TRAIN_POSTAGGER="true"
+TRAIN_SENTDETECT="true"
+# If 'true', each resulting model is evaluated, 'false' otherwise
+EVAL_AFTER_TRAINING="true"
+# If 'true, training of experimental languages will be attempted, otherwise only stable languages & treebanks are used
+EXPERIMENTAL_LANGUAGES="false"
+# If 'true', all release preparation steps are conducted, 'false' otherwise
+CREATE_RELEASE="true"
+# The public key from the OPENNLP KEYS file in short form
+GPG_PUBLIC_KEY=""
 
 # Model(s) to train
 declare -a MODELS=("English|en|EWT" "Dutch|nl|Alpino" "French|fr|GSD" "German|de|GSD" "Italian|it|VIT" "Bulgarian|bg|BTB" "Czech|cs|PDT" "Croatian|hr|SET" "Danish|da|DDT" "Estonian|et|EDT" "Finnish|fi|TDT" "Latvian|lv|LVTB" "Norwegian|no|Bokmaal" "Polish|pl|PDB" "Portuguese|pt|GSD" "Romanian|ro|RRT" "Russian|ru|GSD" "Serbian|sr|SET" "Slovenian|sl|SSJ" "Spanish|es|GSD" "Slovak|sk|SNK" "Swedish|sv|Talbanken" "Ukrainian|uk|IU")
@@ -50,55 +73,61 @@ do
   SUBSETLC=`echo ${SUBSET} | tr '[:upper:]' '[:lower:]'`
 
   # Tokenizer model
-  echo -e "\nTraining tokenizer model ${SUBSET} ${LANG}..."
-  ${OPENNLP_HOME}/bin/opennlp TokenizerTrainer.conllu -params ${UD_HOME}/${OPENNLP_CONFIG} -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -lang ${LANGCODE} -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
+  if [ ${TRAIN_TOKENIZER} == "true" ]; then
+    echo -e "\nTraining tokenizer model ${SUBSET} ${LANG}..."
+    ${OPENNLP_HOME}/bin/opennlp TokenizerTrainer.conllu -params ${TRAIN_HOME}/${OPENNLP_CONFIG} -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -lang ${LANGCODE} -data ${UD_HOME}/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
 
-  if [ ${EVAL_AFTER_TRAINING} == "true" ]; then
-    echo -e "\nEvaluating tokenizer model ${SUBSET} ${LANG}..."
-    ${OPENNLP_HOME}/bin/opennlp TokenizerMEEvaluator.conllu -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-test.conllu -encoding ${ENCODING} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.eval
+    if [ ${EVAL_AFTER_TRAINING} == "true" ]; then
+      echo -e "\nEvaluating tokenizer model ${SUBSET} ${LANG}..."
+      ${OPENNLP_HOME}/bin/opennlp TokenizerMEEvaluator.conllu -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ${UD_HOME}/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-test.conllu -encoding ${ENCODING} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.eval
+    fi
+    if [ ${CREATE_RELEASE} == "true" ]; then
+      echo -e "\nCreating hashes and ASC signature for tokenizer model ${SUBSET} ${LANG}..."
+      sha512sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha512
+      sha256sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha256
+      gpg --default-key $GPG_PUBLIC_KEY --armor --output ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.asc --detach-sign ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin
+    fi
   fi
 
-  if [ ${CREATE_RELEASE} == "true" ]; then
-    echo -e "\nCreating hashes and ASC signature for tokenizer model ${SUBSET} ${LANG}..."
-    sha512sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha512
-    sha256sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha256
-    gpg --default-key $GPG_PUBLIC_KEY --armor --output ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.asc --detach-sign ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-tokens-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin
-  fi
-  
   # Sentence model
-  echo -e "\nTraining sentence model ${SUBSET} ${LANG}..."
-  ${OPENNLP_HOME}/bin/opennlp SentenceDetectorTrainer.conllu -params ${UD_HOME}/${OPENNLP_CONFIG} -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -lang ${LANGCODE} -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} -sentencesPerSample 10 > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
+  if [ ${TRAIN_SENTDETECT} == "true" ]; then
+    echo -e "\nTraining sentence model ${SUBSET} ${LANG}..."
+    ${OPENNLP_HOME}/bin/opennlp SentenceDetectorTrainer.conllu -params ${TRAIN_HOME}/${OPENNLP_CONFIG} -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -lang ${LANGCODE} -data ${UD_HOME}/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} -sentencesPerSample 10 > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
 
-  if [ ${EVAL_AFTER_TRAINING} == "true" ]; then
-    echo -e "\nEvaluating sentence model ${SUBSET} ${LANG}..."
-    ${OPENNLP_HOME}/bin/opennlp SentenceDetectorEvaluator.conllu -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-test.conllu -encoding ${ENCODING} -sentencesPerSample 10 > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.eval
-  fi
+    if [ ${EVAL_AFTER_TRAINING} == "true" ]; then
+      echo -e "\nEvaluating sentence model ${SUBSET} ${LANG}..."
+      ${OPENNLP_HOME}/bin/opennlp SentenceDetectorEvaluator.conllu -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ${UD_HOME}/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-test.conllu -encoding ${ENCODING} -sentencesPerSample 10 > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.eval
+    fi
 
-  if [ ${CREATE_RELEASE} == "true" ]; then
-    echo -e "\nCreating hashes and ASC signature for sentence model ${SUBSET} ${LANG}..."
-    sha512sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha512
-    sha256sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha256
-    gpg --default-key $GPG_PUBLIC_KEY --armor --output ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.asc --detach-sign ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin
+    if [ ${CREATE_RELEASE} == "true" ]; then
+      echo -e "\nCreating hashes and ASC signature for sentence model ${SUBSET} ${LANG}..."
+      sha512sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha512
+      sha256sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha256
+      gpg --default-key $GPG_PUBLIC_KEY --armor --output ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.asc --detach-sign ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-sentence-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin
+    fi
   fi
 
   # POS model
-  echo -e "\nTraining POS model ${SUBSET} ${LANG}..."
-  ${OPENNLP_HOME}/bin/opennlp POSTaggerTrainer.conllu -params ${UD_HOME}/${OPENNLP_CONFIG} -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} -lang ${LANGCODE} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.eval > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
+  if [ ${TRAIN_POSTAGGER} == "true" ]; then
+    echo -e "\nTraining POS model ${SUBSET} ${LANG}..."
+    ${OPENNLP_HOME}/bin/opennlp POSTaggerTrainer.conllu -params ${TRAIN_HOME}/${OPENNLP_CONFIG} -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ${UD_HOME}/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-train.conllu -encoding ${ENCODING} -lang ${LANGCODE} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.train
 
-  if [ ${EVAL_AFTER_TRAINING} == "true" ]; then
-    echo -e "\nEvaluating POS model ${SUBSET} ${LANG}..."
-    ${OPENNLP_HOME}/bin/opennlp POSTaggerEvaluator.conllu -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ./ud-treebanks-v2.14/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-test.conllu -encoding ${ENCODING} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.eval
-  fi
+    if [ ${EVAL_AFTER_TRAINING} == "true" ]; then
+      echo -e "\nEvaluating POS model ${SUBSET} ${LANG}..."
+      ${OPENNLP_HOME}/bin/opennlp POSTaggerEvaluator.conllu -model ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin -data ${UD_HOME}/UD_${LANG}-${SUBSET}/${LANGCODE}_${SUBSETLC}-ud-test.conllu -encoding ${ENCODING} > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.eval
+    fi
 
-  if [ ${CREATE_RELEASE} == "true" ]; then
-    echo -e "\nCreating hashes and ASC signature for POS model ${SUBSET} ${LANG}..."
-    sha512sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha512
-    sha256sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha256
-    gpg --default-key $GPG_PUBLIC_KEY --armor --output ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.asc --detach-sign ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin
+    if [ ${CREATE_RELEASE} == "true" ]; then
+      echo -e "\nCreating hashes and ASC signature for POS model ${SUBSET} ${LANG}..."
+      sha512sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha512
+      sha256sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha256
+      gpg --default-key $GPG_PUBLIC_KEY --armor --output ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.asc --detach-sign ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin
+    fi
   fi
 
 done
 
+# Conducts finalization steps to collect all training (and evaluation) log files into a zip
 if [ ${CREATE_RELEASE} == "true" ]; then
     cd ${OUTPUT_MODELS};
     echo -e "\nCreating ZIP with eval and training logs..."
