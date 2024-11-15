@@ -39,7 +39,7 @@ OPENNLP_VERSION_NUMERIC="2.5.0"
 # The directory the resulting binary models are written to
 OUTPUT_MODELS="./ud-models-2.5.0"
 # The directory the ud treebanks are located in
-UD_HOME="./ud-treebanks-v2.14"
+UD_HOME="./ud-treebanks-v2.15"
 
 #################################################
 # Parameters for training, evaluation & release #
@@ -54,7 +54,7 @@ EVAL_AFTER_TRAINING="true"
 # If 'true, training of experimental languages will be attempted, otherwise only stable languages & treebanks are used
 EXPERIMENTAL_LANGUAGES="false"
 # If 'true', all release preparation steps are conducted, 'false' otherwise
-CREATE_RELEASE="true"
+CREATE_RELEASE="false"
 # The public key from the OPENNLP KEYS file in short form
 GPG_PUBLIC_KEY=""
 
