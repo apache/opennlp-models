@@ -81,9 +81,26 @@ It is compatible with OpenNLP `>= 1.8.3`. Model details are available [here](htt
 
 ## Getting Started
 
-You can import a model artifact directly via Maven, SBT or Gradle, for instance:
+The [Universal Dependencies](https://universaldependencies.org) (UD) community provides a framework for consistent annotation of grammar across different human languages.
+The project is developing cross-linguistically consistent treebank annotation for 150+ languages.           
+
+### Referencing published Models
+
+You can import UD-based model artifacts directly via Maven, SBT or Gradle, for instance:
 
 #### Maven
+
+```
+<dependency>
+    <groupId>org.apache.opennlp</groupId>
+    <artifactId>opennlp-models-pos-de</artifactId>
+    <version>${opennlp.models.version}</version>
+</dependency>
+```
+
+for all **23** supported languages, listed on the Apache OpenNLP [Model page](https://opennlp.apache.org/models.html).
+
+The broader langdetect model can be referenced like this:   
 
 ```
 <dependency>
@@ -107,9 +124,72 @@ compile group: "org.apache.opennlp", name: "opennlp-models-langdetect", version:
 
 For more details please check our [documentation](https://opennlp.apache.org/docs/)
 
-## Adding a new Model
 
-Ensure to add a new model to the `expected-models.txt` file located in `opennlp-models-test`.
+### Training Models
+
+All released _sentence detection_, _tokenization_, _lemmatizer_, and _POS tagging_ models were and can be trained via the `ud-train.sh` script.
+It is located in the _opennlp-models-training-ud_ directory in this repository. 
+
+#### Preparing the environment
+
+Before training UD-based OpenNLP models, the execution environment needs the latest [OpenNLP release](https://opennlp.apache.org/download.html) and the latest set of [UD treebanks](https://universaldependencies.org/#download).
+Download the corresponding archive files and uncompress them both in the same directory in which the training script resides.
+Rename both folders according to the `OPENNLP_HOME` and `UD_HOME` variables. 
+
+> [!IMPORTANT]
+> Check and adjust the version string in both variables, that is, to the versions you have actually downloaded. 
+
+#### Selecting model types
+
+Next, select what type of models should be trained. By default, the script defines:
+
+```
+TRAIN_TOKENIZER="true"
+TRAIN_POSTAGGER="true"
+TRAIN_SENTDETECT="true"
+TRAIN_LEMMATIZER="true"
+```
+
+Simply switch off a certain type, by setting the corresponding variable to false.
+
+#### Selecting languages
+
+By default, treebanks of 23 supported languages are included in the `MODELS` variable of the script.
+If only a smaller or different (sub-)set is required, this variable can simply be edited.
+The format must be followed: `<Language>|<2-digit-locale-code>|<UD treebank name>`, for example: `English|en|EWT` or `Swedish|sv|Talbanken`.
+
+> [!NOTE]
+> The full list of supported languages and related treebanks is available [here](https://universaldependencies.org/#current-ud-languages).
+> Yet, even listed on the UD page, training OpenNLP models might not succeed. If it succeeds, check the evaluation logs (_*.eval_) if the computed accuracy meets your expectations.
+                       
+#### Adjusting training parameters
+
+Once you're done with the preparations, check the `ud-train.conf` file. With this config file, you can adjust the number of threads used for certain training steps. 
+Moreover, it is possible to adjust the number of iterations (default: 150) to achieve (slightly) better model performance.
+
+#### Executing 'ud-train.sh'
+
+Make sure to make the `ud-train.sh` script executable. 
+On Unix-oid environments this can simply be achieved by setting the execute bit: `chmod 744 ud-train.sh`.
+
+> [!TIP]
+> As model training(s) can be a long-running task, depending on CPU type and number of CPU cores,
+> the script should be started inside a [`screen`](https://www.man7.org/linux/man-pages/man1/screen.1.html) instance.
+
+Finally, execute the script via invoking `./ud-train.sh` and start brewing and enjoying some :coffee:.
+
+The script logs each training (and evaluation) step per selected language / treebank, thus allowing progress tracking. 
+
+#### Evaluating trained Models
+
+After a training step succeeds, a corresponding evaluation step is executed. If you want to skip it, set `EVAL_AFTER_TRAINING` to `false`.
+In case the evaluation is run, the resulting performance (accuracy) is written to files ending with `.eval`.                                                                                                                        
+
+### Adding new Models
+
+When adding new models to the `pom.xml`, ensure to add new models to the `expected-models.txt` file located in `opennlp-models-test`.
+In addition, make sure a sha256 hash is computed on each binary artifact. 
+The corresponding value must be set or updated correctly for each model type and language.                                       
 
 ## Contributing
 
