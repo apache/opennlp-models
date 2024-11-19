@@ -140,7 +140,7 @@ do
       echo -e "Creating hashes and ASC signature for Lemmatizer model ${SUBSET} ${LANG}..."
       sha512sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-lemmas-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-lemmas-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha512
       sha256sum ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-lemmas-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin > ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-lemmas-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.sha256
-      gpg --default-key $GPG_KEY --armor --output ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-pos-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.asc --detach-sign ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-lemmas-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin
+      gpg --default-key $GPG_KEY --armor --output ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-lemmas-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin.asc --detach-sign ${OUTPUT_MODELS}/opennlp-${LANGCODE}-ud-${SUBSETLC}-lemmas-${OPENNLP_MODEL_VERSION}-${OPENNLP_VERSION_NUMERIC}.bin
     fi
   fi
 
