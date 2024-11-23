@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-sentdetect</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Sent-Detect :: Finnish</name>  
   <artifactId>opennlp-models-sentdetect-fi</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-fi-ud-tdt-sentence-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>1ba7c96b0288e91ace9dc3e87c4c5e139d9725a24f8f0790723f0c06cf48f754</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-fi-ud-tdt-sentence-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>df25ac0d4fd5ea494d61159b9265f48e5dc4191d86f5d0a672f4830af0e2d564</model.sha256>
     <model.language>fi</model.language> 
   </properties>  
   <build> 

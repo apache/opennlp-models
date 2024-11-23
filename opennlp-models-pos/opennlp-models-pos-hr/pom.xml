@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models-pos</artifactId>
-        <version>1.1.1-SNAPSHOT</version>
+        <version>1.2.0-SNAPSHOT</version>
     </parent>
 
     <name>Apache OpenNLP Models :: Part-Of-Speech :: Croatian</name>
@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.1</model.family>
-        <model.name>opennlp-hr-ud-set-pos-1.1-2.4.0.bin</model.name>
-        <model.version>2.4.0</model.version>
-        <model.sha256>8cce65a4343cd82ce03f076ad21143a6245667dabcf69e38af5b5e5652b0e163</model.sha256>
+        <model.family>ud-models-1.2</model.family>
+        <model.name>opennlp-hr-ud-set-pos-1.2-2.5.0.bin</model.name>
+        <model.version>2.5.0</model.version>
+        <model.sha256>dcdfde973e5207ac83f6310a97725a589b0d3b0d27165ac8ae08d4edeb170f37</model.sha256>
         <model.language>hr</model.language>
     </properties>
 

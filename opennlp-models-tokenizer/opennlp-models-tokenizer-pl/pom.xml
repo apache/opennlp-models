@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-tokenizer</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Tokenizer :: Polish</name>  
   <artifactId>opennlp-models-tokenizer-pl</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-pl-ud-pdb-tokens-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>fb2b0d83013d9e73ca7491e1e2e570e97aa783e6732c01b9832783d8d64fa13b</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-pl-ud-pdb-tokens-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>845d1b1deb52f3589e0745c0f9840e76a7226ae89189cb15c17bd6b8da72e222</model.sha256>
     <model.language>pl</model.language> 
   </properties>  
   <build> 

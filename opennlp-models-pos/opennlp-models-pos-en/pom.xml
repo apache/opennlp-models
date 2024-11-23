@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models-pos</artifactId>
-        <version>1.1.1-SNAPSHOT</version>
+        <version>1.2.0-SNAPSHOT</version>
     </parent>
 
     <name>Apache OpenNLP Models :: Part-Of-Speech :: English</name>
@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.1</model.family>
-        <model.name>opennlp-en-ud-ewt-pos-1.1-2.4.0.bin</model.name>
-        <model.version>2.4.0</model.version>
-        <model.sha256>b0781af1229431d8a78c1d9dbe8ff236ee61b2b0b4a4b4080e6912a5827bdecb</model.sha256>
+        <model.family>ud-models-1.2</model.family>
+        <model.name>opennlp-en-ud-ewt-pos-1.2-2.5.0.bin</model.name>
+        <model.version>2.5.0</model.version>
+        <model.sha256>5af913a52fa0b014e22c4c4411e146720f1222bdebde9ce1f1a3174df974d26d</model.sha256>
         <model.language>en</model.language>
     </properties>
 

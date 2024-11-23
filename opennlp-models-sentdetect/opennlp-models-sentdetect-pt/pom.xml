@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-sentdetect</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Sent-Detect :: Portuguese</name>  
   <artifactId>opennlp-models-sentdetect-pt</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-pt-ud-gsd-sentence-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>2a30461f5abe3a6b4a9c47e2a6be23ad01e7c4838bc458654da91dc6aa408188</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-pt-ud-gsd-sentence-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>739f79390abb3320234bf501fb51cba0038be19a7b2cf86c3a528b66862dbcd0</model.sha256>
     <model.language>pt</model.language> 
   </properties>  
   <build> 

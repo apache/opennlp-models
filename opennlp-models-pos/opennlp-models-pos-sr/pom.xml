@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-pos</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Part-Of-Speech :: Serbian</name>  
   <artifactId>opennlp-models-pos-sr</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-sr-ud-set-pos-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>3f87335c6e30f137642fc803280dd37cc43409065b4736c46ae7896374f09459</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-sr-ud-set-pos-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>8e4bbd534516c5d1774506c4b66fbefb10c42a55ffcb161d8d8411aad8e1da27</model.sha256>
     <model.language>sr</model.language> 
   </properties>  
   <build> 

@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-tokenizer</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Tokenizer :: Serbian</name>  
   <artifactId>opennlp-models-tokenizer-sr</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-sr-ud-set-tokens-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>9775b167b52deb1d8661af5f3e1317e828e7fc9b5bb3d7d3e2414b7fa923226b</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-sr-ud-set-tokens-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>fba5c70d172ade02faa62cfa3b220f5c42b52df0f45ce04a2acf5de64fc6edfe</model.sha256>
     <model.language>sr</model.language> 
   </properties>  
   <build> 

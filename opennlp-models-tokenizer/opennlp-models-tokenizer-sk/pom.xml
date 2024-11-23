@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-tokenizer</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Tokenizer :: Slovak</name>  
   <artifactId>opennlp-models-tokenizer-sk</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-sk-ud-snk-tokens-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>b861ed0909b68115243b5b3a78e057630a5217e4e4ccd400af4265ce97b51df1</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-sk-ud-snk-tokens-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>79741fe791c2e09b97406a6c292b33a6e348e472dae5afdba81a8c6895405720</model.sha256>
     <model.language>sk</model.language> 
   </properties>  
   <build> 

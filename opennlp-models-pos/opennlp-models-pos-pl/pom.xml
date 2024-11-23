@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-pos</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Part-Of-Speech :: Polish</name>  
   <artifactId>opennlp-models-pos-pl</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-pl-ud-pdb-pos-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>dfbb3f005c3d4027d180e0d491c185fabfa9a1dfe24cc15392630a2c2082870e</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-pl-ud-pdb-pos-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>e0a015216bc08cb8d6a54db790281a3404eede76336fdaf6ad0b6d001b24aaa4</model.sha256>
     <model.language>pl</model.language> 
   </properties>  
   <build> 

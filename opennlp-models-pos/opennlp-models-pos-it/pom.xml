@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models-pos</artifactId>
-        <version>1.1.1-SNAPSHOT</version>
+        <version>1.2.0-SNAPSHOT</version>
     </parent>
 
     <name>Apache OpenNLP Models :: Part-Of-Speech :: Italian</name>
@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.1</model.family>
-        <model.name>opennlp-it-ud-vit-pos-1.1-2.4.0.bin</model.name>
-        <model.version>2.4.0</model.version>
-        <model.sha256>aa5e4b27fb72532952ef89c99e2aee3a188bd7ea1d88e225ee056fa8b677a65d</model.sha256>
+        <model.family>ud-models-1.2</model.family>
+        <model.name>opennlp-it-ud-vit-pos-1.2-2.5.0.bin</model.name>
+        <model.version>2.5.0</model.version>
+        <model.sha256>88850646eae85698e93bc6b8b7efcfe8a695fde8f1f66d88d38b2f0c9fe6c2f9</model.sha256>
         <model.language>it</model.language>
     </properties>
 

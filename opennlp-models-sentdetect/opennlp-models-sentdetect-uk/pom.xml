@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-sentdetect</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Sent-Detect :: Ukrainian</name>  
   <artifactId>opennlp-models-sentdetect-uk</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-uk-ud-iu-sentence-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>35fb9a674a6ee0c879ec8e4f47a85b797ade7db8d6e2908676d85387d024721f</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-uk-ud-iu-sentence-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>f82704086f2802c540d91004e77fd17351ec2e1f81f9630b7d5fbb582216aba0</model.sha256>
     <model.language>uk</model.language> 
   </properties>  
   <build> 

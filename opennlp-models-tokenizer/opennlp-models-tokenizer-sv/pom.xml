@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-tokenizer</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Tokenizer :: Swedish</name>  
   <artifactId>opennlp-models-tokenizer-sv</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-sv-ud-talbanken-tokens-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>35003ff37acab6d6bfa9d48041da4c804aaee495485c7077e162348227ce3874</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-sv-ud-talbanken-tokens-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>c27214633eca96d033005598ef97456ddc08f0c04057571d5f81e3e889be9e6b</model.sha256>
     <model.language>sv</model.language> 
   </properties>  
   <build> 

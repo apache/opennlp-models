@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-tokenizer</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Tokenizer :: Estonian</name>  
   <artifactId>opennlp-models-tokenizer-et</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-et-ud-edt-tokens-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>5aa8dbd9ec830308b6e67b4895f91abeb61fdbabc6571fadce91ea1eb148a0fb</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-et-ud-edt-tokens-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>7d08cf11123e7da70ffec04893d0d394e8a25f78801bcebe168c68c87afd623f</model.sha256>
     <model.language>et</model.language> 
   </properties>  
   <build> 

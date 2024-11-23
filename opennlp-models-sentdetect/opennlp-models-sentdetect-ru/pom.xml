@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-sentdetect</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Sent-Detect :: Russian</name>  
   <artifactId>opennlp-models-sentdetect-ru</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-ru-ud-gsd-sentence-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>c3cdf2475c8371bed8a0dc37858528b45a732e21b2441a63d0b6d56b32a9ef58</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-ru-ud-gsd-sentence-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>cbeec5344ecec39ab6e8ad3ccf05a8c3187ebdb778818936c12978ddbbbdeee2</model.sha256>
     <model.language>ru</model.language> 
   </properties>  
   <build> 

@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-sentdetect</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Sent-Detect :: Latvian</name>  
   <artifactId>opennlp-models-sentdetect-lv</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-lv-ud-lvtb-sentence-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>bfbfdb7965f21d6b957694ed0f4c9715704b46ca3f8b4d3287fe9fe63a9ec3d3</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-lv-ud-lvtb-sentence-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>bb35e6f04a5dca995458669b3246aa04f47348b44a279bbad80ddc85c13e80b9</model.sha256>
     <model.language>lv</model.language> 
   </properties>  
   <build> 

@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-sentdetect</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Sent-Detect :: Slovenian</name>  
   <artifactId>opennlp-models-sentdetect-sl</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-sl-ud-ssj-sentence-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>b7c6dc1d71df200423ab39d42d4146c0503ee535d585f3acbb276551ccf86bb6</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-sl-ud-ssj-sentence-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>6167f99a9be98e5b2fee6b4b7750849f62b7f2b1071a79a656a4f97ce62e3df6</model.sha256>
     <model.language>sl</model.language> 
   </properties>  
   <build> 

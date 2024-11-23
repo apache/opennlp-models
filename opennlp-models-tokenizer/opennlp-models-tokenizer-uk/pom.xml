@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-tokenizer</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Tokenizer :: Ukrainian</name>  
   <artifactId>opennlp-models-tokenizer-uk</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-uk-ud-iu-tokens-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>69737ca1013b051db801caf5e85117ab3d9ae89ab4d26b5588455bed34e159a5</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-uk-ud-iu-tokens-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>2e2747f0790732ca521a714f25142b1fabcc067ca69a09a045c9dd80c38b8f59</model.sha256>
     <model.language>uk</model.language> 
   </properties>  
   <build> 
