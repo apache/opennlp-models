@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-sentdetect</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Sent-Detect :: Slovak</name>  
   <artifactId>opennlp-models-sentdetect-sk</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-sk-ud-snk-sentence-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>dcd73f2a6c8358b70eab36b691a82ea7bbe0b2fe43a595e6cca711b335545c09</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-sk-ud-snk-sentence-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>e6a21c898a25119568d59869f98c65f879eb0a7a0f8bb608139516c7d5a6e729</model.sha256>
     <model.language>sk</model.language> 
   </properties>  
   <build> 

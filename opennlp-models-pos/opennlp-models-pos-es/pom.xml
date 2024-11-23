@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-pos</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Part-Of-Speech :: Spanish</name>  
   <artifactId>opennlp-models-pos-es</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-es-ud-gsd-pos-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>418a9a6a30e27452bdccb6fba83c7be08cad55447178b20819ddd86607d30a01</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-es-ud-gsd-pos-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>395cb88e6bf1484f751465d1019cdd3c659abfbb863fb7d6299fd3cb7b027341</model.sha256>
     <model.language>es</model.language> 
   </properties>  
   <build> 

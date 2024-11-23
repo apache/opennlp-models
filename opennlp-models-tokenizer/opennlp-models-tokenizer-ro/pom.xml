@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-tokenizer</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Tokenizer :: Romanian</name>  
   <artifactId>opennlp-models-tokenizer-ro</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-ro-ud-rrt-tokens-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>20567c9faafcacd210728c404bba5aeeecaec8a1bf4967fb59b0702566d8fdd7</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-ro-ud-rrt-tokens-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>da717ff89277b2046a101d8a4d589bd219d704f1b8dee3633cd2664312d5bbe1</model.sha256>
     <model.language>ro</model.language> 
   </properties>  
   <build> 

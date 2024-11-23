@@ -59,8 +59,7 @@ CREATE_RELEASE="false"
 GPG_PUBLIC_KEY=""
 
 # Model(s) to train
-declare -a MODELS=("English|en|EWT" "Dutch|nl|Alpino" "French|fr|GSD" "German|de|GSD" "Italian|it|VIT" "Bulgarian|bg|BTB" "Czech|cs|PDT" "Croatian|hr|SET" "Danish|da|DDT" "Estonian|et|EDT" "Finnish|fi|TDT" "Latvian|lv|LVTB" "Norwegian|no|Bokmaal" "Polish|pl|PDB" "Portuguese|pt|GSD" "Romanian|ro|RRT" "Russian|ru|GSD" "Serbian|sr|SET" "Slovenian|sl|SSJ" "Spanish|es|GSD" "Slovak|sk|SNK" "Swedish|sv|Talbanken" "Ukrainian|uk|IU")
-
+declare -a MODELS=("English|en|EWT" "Dutch|nl|Alpino" "French|fr|GSD" "German|de|GSD" "Italian|it|VIT" "Bulgarian|bg|BTB" "Czech|cs|PDT" "Croatian|hr|SET" "Danish|da|DDT" "Estonian|et|EDT" "Finnish|fi|TDT" "Latvian|lv|LVTB" "Norwegian|no|Bokmaal" "Polish|pl|PDB" "Portuguese|pt|GSD" "Romanian|ro|RRT" "Russian|ru|GSD" "Serbian|sr|SET" "Slovenian|sl|SSJ" "Spanish|es|GSD" "Slovak|sk|SNK" "Swedish|sv|Talbanken" "Ukrainian|uk|IU" "Armenian|hy|BSUT" "Basque|eu|BDT" "Catalan|ca|AnCora" "Georgian|ka|GLC" "Greek|el|GDT" "Kazakh|kk|KTB" "Korean|ko|Kaist" "Icelandic|is|IcePaHC" "Turkish|tr|BOUN")
 # Create output directory
 mkdir -p ${OUTPUT_MODELS}
 

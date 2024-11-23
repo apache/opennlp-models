@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.apache.opennlp</groupId>
+    <artifactId>opennlp-models</artifactId>
+    <version>1.2.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>opennlp-models-lemmatizer</artifactId>
+  <name>Apache OpenNLP Models :: Lemmatizer</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>opennlp-models-lemmatizer-bg</module>
+    <module>opennlp-models-lemmatizer-ca</module>
+    <module>opennlp-models-lemmatizer-cs</module>
+    <module>opennlp-models-lemmatizer-da</module>
+    <module>opennlp-models-lemmatizer-de</module>
+    <module>opennlp-models-lemmatizer-el</module>
+    <module>opennlp-models-lemmatizer-en</module>
+    <module>opennlp-models-lemmatizer-es</module>
+    <module>opennlp-models-lemmatizer-et</module>
+    <module>opennlp-models-lemmatizer-eu</module>
+    <module>opennlp-models-lemmatizer-fi</module>
+    <module>opennlp-models-lemmatizer-fr</module>
+    <module>opennlp-models-lemmatizer-hr</module>
+    <module>opennlp-models-lemmatizer-hy</module>
+    <module>opennlp-models-lemmatizer-is</module>
+    <module>opennlp-models-lemmatizer-it</module>
+    <module>opennlp-models-lemmatizer-ka</module>
+    <module>opennlp-models-lemmatizer-kk</module>
+    <module>opennlp-models-lemmatizer-ko</module>
+    <module>opennlp-models-lemmatizer-lv</module>
+    <module>opennlp-models-lemmatizer-nl</module>
+    <module>opennlp-models-lemmatizer-no</module>
+    <module>opennlp-models-lemmatizer-pl</module>
+    <module>opennlp-models-lemmatizer-pt</module>
+    <module>opennlp-models-lemmatizer-ro</module>
+    <module>opennlp-models-lemmatizer-ru</module>
+    <module>opennlp-models-lemmatizer-sk</module>
+    <module>opennlp-models-lemmatizer-sl</module>
+    <module>opennlp-models-lemmatizer-sr</module>
+    <module>opennlp-models-lemmatizer-sv</module>
+    <module>opennlp-models-lemmatizer-tr</module>
+    <module>opennlp-models-lemmatizer-uk</module>
+  </modules>
+
+</project>

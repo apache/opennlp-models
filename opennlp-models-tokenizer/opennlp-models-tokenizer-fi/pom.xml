@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-tokenizer</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Tokenizer :: Finnish</name>  
   <artifactId>opennlp-models-tokenizer-fi</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-fi-ud-tdt-tokens-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>dc43964a1c6f7ea5bfbbc3b51f362e89997b564472542d9d3b2fcb33f54dfe29</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-fi-ud-tdt-tokens-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>61b145638c8c2d78e3067ec2438a13ea70bf8c22c5d2e765f7996facad4b73af</model.sha256>
     <model.language>fi</model.language> 
   </properties>  
   <build> 

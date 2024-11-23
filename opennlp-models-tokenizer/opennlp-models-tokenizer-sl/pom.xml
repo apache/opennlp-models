@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-tokenizer</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Tokenizer :: Slovenian</name>  
   <artifactId>opennlp-models-tokenizer-sl</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-sl-ud-ssj-tokens-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>2b5b70fcfd119eb7bb3e4a1fd1f42b859a31cb86b454a55e75de18013b088a2a</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-sl-ud-ssj-tokens-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>567ef05823db738fabf9d4fadfec462af1ec5316d5f4fe2a7a124067d0dfa681</model.sha256>
     <model.language>sl</model.language> 
   </properties>  
   <build> 

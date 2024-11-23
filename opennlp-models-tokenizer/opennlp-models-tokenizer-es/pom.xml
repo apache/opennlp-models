@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-tokenizer</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Tokenizer :: Spanish</name>  
   <artifactId>opennlp-models-tokenizer-es</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-es-ud-gsd-tokens-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>43e891bedf178b690da2fb6b5a58ff308fb7e2cf31ab4f1a939527d71ff93ff8</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-es-ud-gsd-tokens-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>14c9cd901a4a437f1d4c1db56ef6878eb125190011d50e4ebbd5b5771f0b11be</model.sha256>
     <model.language>es</model.language> 
   </properties>  
   <build> 

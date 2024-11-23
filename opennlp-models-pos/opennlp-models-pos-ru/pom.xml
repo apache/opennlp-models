@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-pos</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Part-Of-Speech :: Russian</name>  
   <artifactId>opennlp-models-pos-ru</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-ru-ud-gsd-pos-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>23cd35f75f1956972f1ec227c4fdbc41a8477786f9879c9e6a7edce28103f96d</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-ru-ud-gsd-pos-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>e835cd575f1e1344250e12dc5369c886e523f5462ef470c127800b595516b491</model.sha256>
     <model.language>ru</model.language> 
   </properties>  
   <build> 

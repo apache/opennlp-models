@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models-pos</artifactId>
-        <version>1.1.1-SNAPSHOT</version>
+        <version>1.2.0-SNAPSHOT</version>
     </parent>
 
     <name>Apache OpenNLP Models :: Part-Of-Speech :: Danish</name>
@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.1</model.family>
-        <model.name>opennlp-da-ud-ddt-pos-1.1-2.4.0.bin</model.name>
-        <model.version>2.4.0</model.version>
-        <model.sha256>f44cc0ec3fe66d67f6ab3892f9db3764a869855e9c822bb0e813250fe7071c06</model.sha256>
+        <model.family>ud-models-1.2</model.family>
+        <model.name>opennlp-da-ud-ddt-pos-1.2-2.5.0.bin</model.name>
+        <model.version>2.5.0</model.version>
+        <model.sha256>b02fa00601c8de11f4be0a6798e85a754f3f6d3df4c8c1e97e4359ef0fc6777b</model.sha256>
         <model.language>da</model.language>
     </properties>
 

@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>org.apache.opennlp</groupId>
         <artifactId>opennlp-models-tokenizer</artifactId>
-        <version>1.1.1-SNAPSHOT</version>
+        <version>1.2.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>opennlp-models-tokenizer-hr</artifactId>
@@ -33,10 +33,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.1</model.family>
-        <model.name>opennlp-hr-ud-set-tokens-1.1-2.4.0.bin</model.name>
-        <model.version>2.4.0</model.version>
-        <model.sha256>ee76e94fa5b5a218b2e3cb9f781e05cae37cf282d88795358658dafd91408f5d</model.sha256>
+        <model.family>ud-models-1.2</model.family>
+        <model.name>opennlp-hr-ud-set-tokens-1.2-2.5.0.bin</model.name>
+        <model.version>2.5.0</model.version>
+        <model.sha256>baacf3659255210969ca85d5523315c9cb3341f3db4749f24fbfb292fa6e5e77</model.sha256>
         <model.language>hr</model.language>
     </properties>
 

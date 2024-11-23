@@ -23,16 +23,16 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-sentdetect</artifactId>  
-    <version>1.1.1-SNAPSHOT</version> 
+    <version>1.2.0-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Sent-Detect :: Norwegian</name>  
   <artifactId>opennlp-models-sentdetect-no</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.1</model.family>  
-    <model.name>opennlp-no-ud-bokmaal-sentence-1.1-2.4.0.bin</model.name>  
-    <model.version>2.4.0</model.version>  
-    <model.sha256>b390b7cbfeeaf6a0fc982940f7003b56d61563ac4be846f93aeb7745d723d5b3</model.sha256>  
+    <model.family>ud-models-1.2</model.family>
+    <model.name>opennlp-no-ud-bokmaal-sentence-1.2-2.5.0.bin</model.name>
+    <model.version>2.5.0</model.version>
+    <model.sha256>ca64827a40c95d2d8cd17c8a5011370c258b8705bdd7ca374fa37d779f382a47</model.sha256>
     <model.language>no</model.language> 
   </properties>  
   <build> 
