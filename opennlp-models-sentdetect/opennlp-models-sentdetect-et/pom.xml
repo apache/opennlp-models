@@ -23,7 +23,7 @@ under the License.
   <parent> 
     <groupId>org.apache.opennlp</groupId>  
     <artifactId>opennlp-models-sentdetect</artifactId>  
-    <version>1.2.0</version>
+    <version>1.2.1-SNAPSHOT</version>
   </parent>  
   <name>Apache OpenNLP Models :: Sent-Detect :: Estonian</name>  
   <artifactId>opennlp-models-sentdetect-et</artifactId>  
