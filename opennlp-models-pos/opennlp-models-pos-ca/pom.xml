@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-ca-ud-ancora-pos-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>f54d7717d43b08f7a8ea8da88bee439cbf077cf407de46237de04b2e3c04bc6a</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-ca-ud-ancora-pos-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>26f6b29a07b7d55ec3d007cb4e3935172526397b2c284e2b85ea431d1703a348</model.sha256>
         <model.language>ca</model.language>
     </properties>
 

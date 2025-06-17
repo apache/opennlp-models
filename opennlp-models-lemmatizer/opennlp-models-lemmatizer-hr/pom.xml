@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-hr-ud-set-lemmas-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>2b6397e832e3d1ee39d1496ba07cd3d95c7daa62164dc88978d81548fa2be990</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-hr-ud-set-lemmas-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>7e7ad7547b6ed43fdef0f9b256403a9231400074383c4ef1550daadef58e39bc</model.sha256>
         <model.language>hr</model.language>
     </properties>
 

@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-tokenizer-fi</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-fi-ud-tdt-tokens-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>61b145638c8c2d78e3067ec2438a13ea70bf8c22c5d2e765f7996facad4b73af</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-fi-ud-tdt-tokens-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>4d61c7c972917b9de3a02297b1f03e471c3785a57a8b9d6bb81ebaf757123608</model.sha256>
     <model.language>fi</model.language> 
   </properties>  
   <build> 

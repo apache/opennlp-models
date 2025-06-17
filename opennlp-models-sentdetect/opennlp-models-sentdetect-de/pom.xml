@@ -33,10 +33,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-de-ud-gsd-sentence-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>f99bf60bd6b4c3da98648dd5f67bf7157cce406577316a69a4ac7968b9849dcc</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-de-ud-gsd-sentence-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>b5553223d30a0422e80a28e2ae766a92dd7181e229f0d6c73087951e84142c43</model.sha256>
         <model.language>de</model.language>
     </properties>
 

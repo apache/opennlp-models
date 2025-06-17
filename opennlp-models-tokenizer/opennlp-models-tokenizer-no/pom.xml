@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-tokenizer-no</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-no-ud-bokmaal-tokens-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>acebf58adf9f6b528b9c5e22dd131e1fda4638120d76aeba1abc1fcb0fa0a511</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-no-ud-bokmaal-tokens-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>c267be9138439bdc3296f66b94121d2070d038edddfdb18b2bc4e86ea93bc224</model.sha256>
     <model.language>no</model.language> 
   </properties>  
   <build> 

@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-ka-ud-glc-lemmas-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>d62362dbfafa6d9e49f6e2200466332350e7236d77c4487771cec7984e5cdbaf</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-ka-ud-glc-lemmas-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>e51f8d3bdc98eabf15c2d0bb14382ea05ebd0cf23b9a30ec98c820b333249640</model.sha256>
         <model.language>ka</model.language>
     </properties>
 

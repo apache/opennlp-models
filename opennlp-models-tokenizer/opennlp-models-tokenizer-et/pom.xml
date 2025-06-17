@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-tokenizer-et</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-et-ud-edt-tokens-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>7d08cf11123e7da70ffec04893d0d394e8a25f78801bcebe168c68c87afd623f</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-et-ud-edt-tokens-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>b29365f041282f5e19ad69457eef90b8f90184e135d21b55348da15647bad0ec</model.sha256>
     <model.language>et</model.language> 
   </properties>  
   <build> 

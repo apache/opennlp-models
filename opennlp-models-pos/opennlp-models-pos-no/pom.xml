@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-pos-no</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-no-ud-bokmaal-pos-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>0032f40cde5002d1e1c10805ad52b951e7ded5258806a3f863944040225ff902</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-no-ud-bokmaal-pos-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>a3b9d19ec319dcbb5deac131ed98fa1a11278d3c377dbc0b6ed956fbee53840c</model.sha256>
     <model.language>no</model.language> 
   </properties>  
   <build> 

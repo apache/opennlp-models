@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-tokenizer-lv</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-lv-ud-lvtb-tokens-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>0c5fd01b2f442cd9b296e2fd87ba1f6752fd72029e15222a895ace01b2980730</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-lv-ud-lvtb-tokens-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>92aa5b8f5730d9c6fee28c256f22deec5183ece12b6c7ef06065153b80c9c754</model.sha256>
     <model.language>lv</model.language> 
   </properties>  
   <build> 

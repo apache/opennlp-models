@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-tr-ud-boun-lemmas-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>2f6991e5f4cb976c28dbbd35064e962c56abe4b196c9e3ae4def53d39a3f3f0b</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-tr-ud-boun-lemmas-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>779e49393c566aaf818a552a99c5cf7a8c634362707b3fea3c3e31d430fd1248</model.sha256>
         <model.language>tr</model.language>
     </properties>
 

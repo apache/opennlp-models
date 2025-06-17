@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-sentdetect-sv</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-sv-ud-talbanken-sentence-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>467f5cc99fb97ba436cc9389671d679935d6c85d287e12a6e38837f6dd866bce</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-sv-ud-talbanken-sentence-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>9d709aeef6d632c76e7ca408ba1659a9414e3c82473fd4e5cd36b1faafdbb545</model.sha256>
     <model.language>sv</model.language> 
   </properties>  
   <build> 

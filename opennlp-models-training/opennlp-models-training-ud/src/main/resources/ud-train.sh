@@ -31,15 +31,15 @@ ENCODING="UTF-8"
 # The file to configure the number of compute threads and training iterations
 OPENNLP_CONFIG="ud-train.conf"
 # The directory a stable OpenNLP release is located in
-OPENNLP_HOME="./apache-opennlp-2.5.0"
+OPENNLP_HOME="./apache-opennlp-2.5.4"
 # The target version for training opennlp-models
-OPENNLP_MODEL_VERSION="1.2"
+OPENNLP_MODEL_VERSION="1.3"
 # The version of OpenNLP tools to use for training
-OPENNLP_VERSION_NUMERIC="2.5.0"
+OPENNLP_VERSION_NUMERIC="2.5.4"
 # The directory the resulting binary models are written to
-OUTPUT_MODELS="./ud-models-2.5.0"
+OUTPUT_MODELS="./ud-models-2.5.4"
 # The directory the ud treebanks are located in
-UD_HOME="./ud-treebanks-v2.15"
+UD_HOME="./ud-treebanks-v2.16"
 
 #################################################
 # Parameters for training, evaluation & release #
@@ -59,7 +59,7 @@ CREATE_RELEASE="false"
 GPG_PUBLIC_KEY=""
 
 # Model(s) to train
-declare -a MODELS=("English|en|EWT" "Dutch|nl|Alpino" "French|fr|GSD" "German|de|GSD" "Italian|it|VIT" "Bulgarian|bg|BTB" "Czech|cs|PDT" "Croatian|hr|SET" "Danish|da|DDT" "Estonian|et|EDT" "Finnish|fi|TDT" "Latvian|lv|LVTB" "Norwegian|no|Bokmaal" "Polish|pl|PDB" "Portuguese|pt|GSD" "Romanian|ro|RRT" "Russian|ru|GSD" "Serbian|sr|SET" "Slovenian|sl|SSJ" "Spanish|es|GSD" "Slovak|sk|SNK" "Swedish|sv|Talbanken" "Ukrainian|uk|IU" "Armenian|hy|BSUT" "Basque|eu|BDT" "Catalan|ca|AnCora" "Georgian|ka|GLC" "Greek|el|GDT" "Kazakh|kk|KTB" "Korean|ko|Kaist" "Icelandic|is|IcePaHC" "Turkish|tr|BOUN")
+declare -a MODELS=("English|en|EWT" "Dutch|nl|Alpino" "French|fr|GSD" "German|de|GSD" "Italian|it|VIT" "Bulgarian|bg|BTB" "Czech|cs|PDTC" "Croatian|hr|SET" "Danish|da|DDT" "Estonian|et|EDT" "Finnish|fi|TDT" "Latvian|lv|LVTB" "Norwegian|no|Bokmaal" "Polish|pl|PDB" "Portuguese|pt|GSD" "Romanian|ro|RRT" "Russian|ru|GSD" "Serbian|sr|SET" "Slovenian|sl|SSJ" "Spanish|es|GSD" "Slovak|sk|SNK" "Swedish|sv|Talbanken" "Ukrainian|uk|IU" "Armenian|hy|BSUT" "Basque|eu|BDT" "Catalan|ca|AnCora" "Georgian|ka|GLC" "Greek|el|GDT" "Kazakh|kk|KTB" "Korean|ko|Kaist" "Icelandic|is|IcePaHC" "Turkish|tr|BOUN" "Afrikaans|af|AfriBooms" "Indonesian|id|GSD" "Irish|ga|IDT" "Persian|fa|PerDT")
 # Create output directory
 mkdir -p ${OUTPUT_MODELS}
 

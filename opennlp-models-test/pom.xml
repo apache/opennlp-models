@@ -52,6 +52,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-de</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-no</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -65,6 +71,12 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-no</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-no</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -88,6 +100,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-fi</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-ru</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -101,6 +119,12 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-ru</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-ru</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -124,6 +148,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-sv</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-pt</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -137,6 +167,12 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-pt</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-pt</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -160,6 +196,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-bg</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-en</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -173,6 +215,12 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-en</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-en</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -196,6 +244,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-lv</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-hr</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -209,6 +263,12 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-hr</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-hr</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -232,6 +292,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-it</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-fr</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -245,6 +311,12 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-fr</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-fr</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -268,6 +340,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-es</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-et</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -281,6 +359,12 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-et</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-et</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -304,6 +388,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-cs</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-uk</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -317,6 +407,12 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-uk</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-uk</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -340,6 +436,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-sk</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-sl</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -353,6 +455,12 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-sl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-sl</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -376,6 +484,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-pl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-da</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -394,6 +508,13 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-da</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-ro</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -407,6 +528,12 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-ro</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-ro</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -430,6 +557,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-nl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-sentdetect-sr</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -443,6 +576,108 @@ under the License.
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-models-tokenizer-sr</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-sr</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-sentdetect-af</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-pos-af</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-tokenizer-af</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-af</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-sentdetect-fa</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-pos-fa</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-tokenizer-fa</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-fa</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-sentdetect-ga</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-pos-ga</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-tokenizer-ga</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-ga</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-sentdetect-id</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-pos-id</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-tokenizer-id</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-models-lemmatizer-id</artifactId>
             <version>${project.version}</version>
         </dependency>
 

@@ -33,10 +33,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-ko-ud-kaist-tokens-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>251b328db1445099ee410c36471e33eb27239e2fec857e7ad5286de562d3eb44</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-ko-ud-kaist-tokens-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>996ca0962ad704a9f26c8b81c16c0921e2c10538e299ce71c9e6a79318ccf0f9</model.sha256>
         <model.language>ko</model.language>
     </properties>
 

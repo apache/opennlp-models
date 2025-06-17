@@ -32,6 +32,7 @@ under the License.
     <packaging>pom</packaging>
 
     <modules>
+        <module>opennlp-models-sentdetect-af</module>
         <module>opennlp-models-sentdetect-bg</module>
         <module>opennlp-models-sentdetect-ca</module>
         <module>opennlp-models-sentdetect-cs</module>
@@ -42,10 +43,13 @@ under the License.
         <module>opennlp-models-sentdetect-es</module>
         <module>opennlp-models-sentdetect-et</module>
         <module>opennlp-models-sentdetect-eu</module>
+        <module>opennlp-models-sentdetect-fa</module>
         <module>opennlp-models-sentdetect-fi</module>
         <module>opennlp-models-sentdetect-fr</module>
+        <module>opennlp-models-sentdetect-ga</module>
         <module>opennlp-models-sentdetect-hr</module>
         <module>opennlp-models-sentdetect-hy</module>
+        <module>opennlp-models-sentdetect-id</module>
         <module>opennlp-models-sentdetect-is</module>
         <module>opennlp-models-sentdetect-it</module>
         <module>opennlp-models-sentdetect-ka</module>

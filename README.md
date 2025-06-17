@@ -45,8 +45,9 @@ You can also follow our [mailing lists](https://opennlp.apache.org/mailing-lists
 
 ## Overview
 
-We provide **Tokenizer**, **Sentence Detector** and **Part-of-Speech Tagger** models for the following 32 languages:
+We provide **Tokenizer**, **Sentence Detector** and **Part-of-Speech Tagger** models for the following 36 languages:
 
+   - Afrikaans
    - Armenian
    - Basque
    - Bulgarian
@@ -63,11 +64,14 @@ We provide **Tokenizer**, **Sentence Detector** and **Part-of-Speech Tagger** mo
    - German
    - Greek
    - Icelandic
+   - Indonesian
+   - Irish
    - Italian
    - Kazakh
    - Korean
    - Latvian
    - Norwegian
+   - Persian
    - Polish
    - Portuguese
    - Romanian
@@ -81,7 +85,7 @@ We provide **Tokenizer**, **Sentence Detector** and **Part-of-Speech Tagger** mo
    - Ukrainian
 
 These models are compatible with OpenNLP `>= 1.0.0`. Further details are available at the [OpenNLP Models](https://opennlp.apache.org/models.html) 
-page and in the [CHANGELOG](https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.2/CHANGES).
+page and in the [CHANGELOG](https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.3/CHANGES).
 
 In addition, we provide a **Language Detector**, which is able to detect 103 languages in ISO 693-3 standard. 
 Works well with longer texts that have at least 2 sentences or more from the same language. 
@@ -107,7 +111,7 @@ You can import UD-based model artifacts directly via Maven, SBT or Gradle, for i
 </dependency>
 ```
 
-for all **32** supported languages, listed on the Apache OpenNLP [Model page](https://opennlp.apache.org/models.html).
+for all **36** supported languages, listed on the Apache OpenNLP [Model page](https://opennlp.apache.org/models.html).
 
 The broader langdetect model can be referenced like this:   
 
@@ -163,7 +167,7 @@ Simply switch off a certain type, by setting the corresponding variable to false
 
 #### Selecting languages
 
-By default, treebanks of 32 supported languages are included in the `MODELS` variable of the script.
+By default, treebanks of 36 supported languages are included in the `MODELS` variable of the script.
 If only a smaller or different (sub-)set is required, this variable can simply be edited.
 The format must be followed: `<Language>|<2-digit-locale-code>|<UD treebank name>`, for example: `English|en|EWT` or `Swedish|sv|Talbanken`.
 
