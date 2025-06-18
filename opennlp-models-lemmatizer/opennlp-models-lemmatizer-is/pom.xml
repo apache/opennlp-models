@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-is-ud-icepahc-lemmas-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>a5452b731e6b71644e94265e91e4dee0a10ff27cfb94e53d869a9e660edfa26e</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-is-ud-icepahc-lemmas-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>0f06f5d1bfd55b161cd2952b69387f949d450ac65692c3b2043d76be4c9bd573</model.sha256>
         <model.language>is</model.language>
     </properties>
 

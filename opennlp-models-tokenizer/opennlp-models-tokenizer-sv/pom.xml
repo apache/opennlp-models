@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-tokenizer-sv</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-sv-ud-talbanken-tokens-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>c27214633eca96d033005598ef97456ddc08f0c04057571d5f81e3e889be9e6b</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-sv-ud-talbanken-tokens-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>58931c52e276344a327f6520c6a033ac2759c88905eec3c3a2222233eed3767a</model.sha256>
     <model.language>sv</model.language> 
   </properties>  
   <build> 

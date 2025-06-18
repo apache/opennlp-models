@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-sentdetect-sk</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-sk-ud-snk-sentence-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>e6a21c898a25119568d59869f98c65f879eb0a7a0f8bb608139516c7d5a6e729</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-sk-ud-snk-sentence-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>8238ae83453a0ed26353ce1d24ec90759b22a37e0bb2c66f7791ac4b96f36f3c</model.sha256>
     <model.language>sk</model.language> 
   </properties>  
   <build> 

@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-tokenizer-ro</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-ro-ud-rrt-tokens-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>da717ff89277b2046a101d8a4d589bd219d704f1b8dee3633cd2664312d5bbe1</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-ro-ud-rrt-tokens-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>f0cfb05b28a03946e108313a59df774d011cc289f8c93256f89174565784f565</model.sha256>
     <model.language>ro</model.language> 
   </properties>  
   <build> 

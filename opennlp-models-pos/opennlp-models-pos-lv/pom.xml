@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-pos-lv</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-lv-ud-lvtb-pos-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>1d4d59c9d8aa301e54c6fa3d52fff87849c83b130f04bf3317340a0d0d21096e</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-lv-ud-lvtb-pos-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>41fa82b7ecd045cf8b59608507fc6b2912d034e941b1d6b5e11ecf15a8ffa314</model.sha256>
     <model.language>lv</model.language> 
   </properties>  
   <build> 

@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-sentdetect-fi</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-fi-ud-tdt-sentence-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>df25ac0d4fd5ea494d61159b9265f48e5dc4191d86f5d0a672f4830af0e2d564</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-fi-ud-tdt-sentence-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>bd2e644264d46d1616fe1e08839381dd15ba78102db851db24bd8d67248a38cd</model.sha256>
     <model.language>fi</model.language> 
   </properties>  
   <build> 

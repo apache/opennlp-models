@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-nl-ud-alpino-lemmas-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>6e69ebf88cadcf5713c9f5f89e9eccfafcf93448f81f52522277e8aa3a7b8a96</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-nl-ud-alpino-lemmas-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>9b90b2b2afb3c4fdca8b32f92544bbf46eea911d406ebfd1497a204f38ee1cf4</model.sha256>
         <model.language>nl</model.language>
     </properties>
 

@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-pos-et</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-et-ud-edt-pos-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>0a24374b1c3ae968a48d9de3b83f7c2d28f89e1f24e864499e67f02c7d7c29c9</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-et-ud-edt-pos-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>68037ebc9c774cff15c4c4d416b1f1d1053eb1c38a23fcfc547d230f0c068387</model.sha256>
     <model.language>et</model.language> 
   </properties>  
   <build> 

@@ -32,6 +32,7 @@ under the License.
     <packaging>pom</packaging>
 
     <modules>
+        <module>opennlp-models-tokenizer-af</module>
         <module>opennlp-models-tokenizer-bg</module>
         <module>opennlp-models-tokenizer-ca</module>
         <module>opennlp-models-tokenizer-cs</module>
@@ -42,10 +43,13 @@ under the License.
         <module>opennlp-models-tokenizer-es</module>
         <module>opennlp-models-tokenizer-et</module>
         <module>opennlp-models-tokenizer-eu</module>
+        <module>opennlp-models-tokenizer-fa</module>
         <module>opennlp-models-tokenizer-fi</module>
         <module>opennlp-models-tokenizer-fr</module>
+        <module>opennlp-models-tokenizer-ga</module>
         <module>opennlp-models-tokenizer-hr</module>
         <module>opennlp-models-tokenizer-hy</module>
+        <module>opennlp-models-tokenizer-id</module>
         <module>opennlp-models-tokenizer-is</module>
         <module>opennlp-models-tokenizer-it</module>
         <module>opennlp-models-tokenizer-ka</module>

@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-pos-uk</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-uk-ud-iu-pos-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>77c7c4df9b34fa9a493b0e90bd22efa7a6fc01513561071221e8b22038d9a829</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-uk-ud-iu-pos-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>ad910ecf9e412413f76add35edc68a48b99d93d8dda2db9d7de8be5d15c678ee</model.sha256>
     <model.language>uk</model.language> 
   </properties>  
   <build> 

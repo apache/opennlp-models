@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-sentdetect-pl</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-pl-ud-pdb-sentence-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>029f7f4b59a38a886a025fedfcc5c5b820b055c455e929e4a5dd5cdc56e27b43</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-pl-ud-pdb-sentence-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>6d61675fe48800bd5b21bf07ed11796d213aca3b8cc331eb103a125b12be6c8b</model.sha256>
     <model.language>pl</model.language> 
   </properties>  
   <build> 

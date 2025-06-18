@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-sv-ud-talbanken-lemmas-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>18ae1ae5d375897a86299633daa4e999c798f4e649817c865cb64b200e9dc1ca</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-sv-ud-talbanken-lemmas-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>7226cff590346ca92ef1369ac90354fdd54668e26dab2b30beb2caf71ed8b551</model.sha256>
         <model.language>sv</model.language>
     </properties>
 

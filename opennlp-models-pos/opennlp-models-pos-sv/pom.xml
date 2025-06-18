@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-pos-sv</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-sv-ud-talbanken-pos-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>d8892b8b16e913d745037ffa3b93dca136c899fa6a284c32812d45f71e306f19</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-sv-ud-talbanken-pos-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>3688b97744cf5b0c0bdde94936c7f8e5c0f04eb0ee74ad3430098f7046f30591</model.sha256>
     <model.language>sv</model.language> 
   </properties>  
   <build> 

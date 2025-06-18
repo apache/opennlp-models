@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-tokenizer-sk</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-sk-ud-snk-tokens-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>79741fe791c2e09b97406a6c292b33a6e348e472dae5afdba81a8c6895405720</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-sk-ud-snk-tokens-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>d68efa277b130e67960a1c4876cd0baabeb71ae95b2374e17da7a877020dbb98</model.sha256>
     <model.language>sk</model.language> 
   </properties>  
   <build> 

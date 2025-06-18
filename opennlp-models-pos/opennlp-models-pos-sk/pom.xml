@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-pos-sk</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-sk-ud-snk-pos-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>091b9b966be0c731d1a420d09f10b62405b22e188b2b767cdbdb988eae0ade2f</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-sk-ud-snk-pos-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>c4c0d0971e430c28abaec5ca01f67e62f711a9f57064457aee57163a1b2764fb</model.sha256>
     <model.language>sk</model.language> 
   </properties>  
   <build> 

@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-tokenizer-pl</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-pl-ud-pdb-tokens-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>845d1b1deb52f3589e0745c0f9840e76a7226ae89189cb15c17bd6b8da72e222</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-pl-ud-pdb-tokens-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>ed7dcf1efc650a2bd1066cf3734e48528514369921ba072bd5be18d677793451</model.sha256>
     <model.language>pl</model.language> 
   </properties>  
   <build> 

@@ -33,10 +33,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-bg-ud-btb-lemmas-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>76aaad689d5ac8aea3255ded19ebb89b37e32f73183b7a64d4d03666090112ac</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-bg-ud-btb-lemmas-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>52e3c216bee7b7366a9289c45aab7705db42b979464133b36e7af2d5cc7ce0c4</model.sha256>
         <model.language>bg</model.language>
     </properties>
 

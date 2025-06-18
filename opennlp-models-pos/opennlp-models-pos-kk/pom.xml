@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-kk-ud-ktb-pos-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>b2a78404cae58d606fc0365735831a4b392d734ee20f2e17dca69a93800f128d</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-kk-ud-ktb-pos-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>84a711a51f12f489c3f82c71d06d1933529fe0557dba5307fa9d7b38d84d71c4</model.sha256>
         <model.language>kk</model.language>
     </properties>
 

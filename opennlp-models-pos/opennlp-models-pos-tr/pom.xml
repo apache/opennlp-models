@@ -18,7 +18,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
@@ -32,10 +31,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-tr-ud-boun-pos-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>4aadef679d49c6eb0fc68a53af23ed8530a6c5fe742f275972ba21e576052067</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-tr-ud-boun-pos-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>f0dcb6269f48871c55e924f4b9fc784136c2d9f5f340579b2fce58b1c074fffb</model.sha256>
         <model.language>tr</model.language>
     </properties>
 

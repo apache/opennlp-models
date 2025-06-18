@@ -32,10 +32,10 @@ under the License.
 
     <properties>
         <dist.base>${asf.dist.base}</dist.base>
-        <model.family>ud-models-1.2</model.family>
-        <model.name>opennlp-el-ud-gdt-lemmas-1.2-2.5.0.bin</model.name>
-        <model.version>2.5.0</model.version>
-        <model.sha256>ac278840d6090acfecd8076c9004f96a683865feab45d919181d6d12d4cafa45</model.sha256>
+        <model.family>ud-models-1.3</model.family>
+        <model.name>opennlp-el-ud-gdt-lemmas-1.3-2.5.4.bin</model.name>
+        <model.version>2.5.4</model.version>
+        <model.sha256>14d1dac35e5f0bdc4a8e07ef58b9d8f4a054dfa6d2b3b96233bc71ef754eb9f4</model.sha256>
         <model.language>el</model.language>
     </properties>
 

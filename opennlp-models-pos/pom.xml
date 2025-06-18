@@ -32,6 +32,7 @@ under the License.
     <packaging>pom</packaging>
 
     <modules>
+        <module>opennlp-models-pos-af</module>
         <module>opennlp-models-pos-bg</module>
         <module>opennlp-models-pos-ca</module>
         <module>opennlp-models-pos-cs</module>
@@ -42,10 +43,13 @@ under the License.
         <module>opennlp-models-pos-es</module>
         <module>opennlp-models-pos-et</module>
         <module>opennlp-models-pos-eu</module>
+        <module>opennlp-models-pos-fa</module>
         <module>opennlp-models-pos-fi</module>
         <module>opennlp-models-pos-fr</module>
+        <module>opennlp-models-pos-ga</module>
         <module>opennlp-models-pos-hr</module>
         <module>opennlp-models-pos-hy</module>
+        <module>opennlp-models-pos-id</module>
         <module>opennlp-models-pos-is</module>
         <module>opennlp-models-pos-it</module>
         <module>opennlp-models-pos-ka</module>

@@ -29,10 +29,10 @@ under the License.
   <artifactId>opennlp-models-sentdetect-no</artifactId>  
   <properties> 
     <dist.base>${asf.dist.base}</dist.base>  
-    <model.family>ud-models-1.2</model.family>
-    <model.name>opennlp-no-ud-bokmaal-sentence-1.2-2.5.0.bin</model.name>
-    <model.version>2.5.0</model.version>
-    <model.sha256>ca64827a40c95d2d8cd17c8a5011370c258b8705bdd7ca374fa37d779f382a47</model.sha256>
+    <model.family>ud-models-1.3</model.family>
+    <model.name>opennlp-no-ud-bokmaal-sentence-1.3-2.5.4.bin</model.name>
+    <model.version>2.5.4</model.version>
+    <model.sha256>3e85d4564085be8374698e801869c0902d3415b7298430befe2ddf57a2b31d94</model.sha256>
     <model.language>no</model.language> 
   </properties>  
   <build> 
