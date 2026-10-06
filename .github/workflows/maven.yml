@@ -31,7 +31,7 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
         with:
-          distribution: adopt
-          java-version: 17
+          distribution: temurin
+          java-version: 21
       - name: Build with Maven
         run: mvn -V clean install --no-transfer-progress
